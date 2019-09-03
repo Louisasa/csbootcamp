@@ -7,20 +7,21 @@ public class FizzBuzz2
     {
         Console.WriteLine("Please input max num: ");
         int num = int.Parse(Console.ReadLine());
+        Console.WriteLine("Please add which rules to include by number separated by a comma: ");
+        string rulesString = Console.ReadLine();
+        rulesString = rulesString.Replace(" ","");
+        string[] rulesList = rulesString.Split(',');
+
+        FlagsForRules flagsForRules = addFlagsToFlagsForRules(rulesList);
+        var ruleApplier = new ApplyRules(flagsForRules);
+
         for (int index = 1; index <= num; index++)
         {
-            List<string> resultList = new List<string>();
+            string resultList = ruleApplier.ApplyAllRules(index);
 
-            checkIfDivisibleByThree(index, resultList);
-            checkIfDivisibleByFive(index, resultList);
-            checkIfDivisibleBySeven(index, resultList);
-            checkIfDivisibleByEleven(index, resultList);
-            checkIfDivisibleByThirteen(index, resultList);
-            checkIfDivisibleBySeventeen(index, resultList);
-
-            if (resultList.Count > 0)
+            if (resultList.Length > 0)
             {
-                Console.WriteLine(string.Join("", resultList));
+                Console.WriteLine(resultList);
             }
             else
             {
@@ -29,67 +30,157 @@ public class FizzBuzz2
         }
     }
 
-    static private void checkIfDivisibleByThree(int index, List<string> resultList)
+    static private FlagsForRules addFlagsToFlagsForRules(string[] rules)
     {
-        if (index % 3 == 0)
+        FlagsForRules flagsForRules = new FlagsForRules();
+        foreach (var rule in rules)
         {
-            resultList.Add("Fizz");
-        }
-    }
-
-    static private void checkIfDivisibleByFive(int index, List<string> resultList)
-    {
-        if (index % 5 == 0)
-        {
-            resultList.Add("Buzz");
-        }
-    }
-
-    static private void checkIfDivisibleBySeven(int index, List<string> resultList)
-    {
-        if (index % 7 == 0)
-        {
-            resultList.Add("Bang");
-        }
-    }
-
-    static private void checkIfDivisibleByEleven(int index, List<string> resultList)
-    {
-        if (index % 11 == 0)
-        {
-            resultList = new List<string>();
-            resultList.Add("Bong");
-        }
-    }
-
-    static private void checkIfDivisibleByThirteen(int index, List<string> resultList)
-    {
-        if (index % 13 == 0)
-        {
-            if (resultList.Contains("Buzz"))
+            int num = int.Parse(rule);
+            if (num == 3)
             {
-                resultList.Insert(resultList.IndexOf("Buzz"), "Fezz");
+                flagsForRules.ShouldApplyThree = true;
             }
-            else if (resultList.Contains("Bang"))
+            else if (num == 5)
             {
-                resultList.Insert(resultList.IndexOf("Bang"), "Fezz");
+                flagsForRules.ShouldApplyFive = true;
             }
-            else if (resultList.Contains("Bong"))
+            else if (num == 7)
             {
-                resultList.Insert(resultList.IndexOf("Bong"), "Fezz");
+                flagsForRules.ShouldApplySeven = true;
             }
-            else
+            else if (num == 11)
             {
-                resultList.Add("Fezz");
+                flagsForRules.ShouldApplyEleven = true;
+            }
+            else if (num == 13)
+            {
+                flagsForRules.ShouldApplyThirteen = true;
+            }
+            else if (num == 17)
+            {
+                flagsForRules.ShouldApplySeventeen = true;
             }
         }
+
+        return flagsForRules;
     }
 
-    static private void checkIfDivisibleBySeventeen(int index, List<string> resultList)
+    public class FlagsForRules
     {
-        if (index % 17 == 0)
+        public bool ShouldApplyThree { get; set; }
+
+        public bool ShouldApplyFive { get; set; }
+
+        public bool ShouldApplySeven { get; set; }
+
+        public bool ShouldApplyEleven { get; set; }
+
+        public bool ShouldApplyThirteen { get; set; }
+
+        public bool ShouldApplySeventeen { get; set; }
+    }
+
+    public class ApplyRules
+    {
+        private readonly FlagsForRules flags;
+        public ApplyRules(FlagsForRules flags)
         {
-            resultList.Reverse();
+            this.flags = flags;
+        }
+
+        public string ApplyAllRules(int index)
+        {
+            List<string> resultList = new List<string>();
+            if (flags.ShouldApplyThree)
+            {
+                applyThreeRule(index, resultList);
+            }
+            if (flags.ShouldApplyFive)
+            {
+                applyFiveRule(index, resultList);
+            }
+            if (flags.ShouldApplySeven)
+            {
+                applySevenRule(index, resultList);
+            }
+            if (flags.ShouldApplyEleven)
+            {
+                applyElevenRule(index, resultList);
+            }
+            if (flags.ShouldApplyThirteen)
+            {
+                applyThirteenRule(index, resultList);
+            }
+            if (flags.ShouldApplySeventeen)
+            {
+                applySeventeenRule(index, resultList);
+            }
+
+            return String.Join("", resultList);
+        }
+
+        private void applyThreeRule(int index, List<string> resultList)
+        {
+            if (index % 3 == 0)
+            {
+                resultList.Add("Fizz");
+            }
+        }
+
+        private void applyFiveRule(int index, List<string> resultList)
+        {
+            if (index % 5 == 0)
+            {
+                resultList.Add("Buzz");
+            }
+        }
+
+        private void applySevenRule(int index, List<string> resultList)
+        {
+            if (index % 7 == 0)
+            {
+                resultList.Add("Bang");
+            }
+        }
+
+        private void applyElevenRule(int index, List<string> resultList)
+        {
+            if (index % 11 == 0)
+            {
+                resultList = new List<string>();
+                resultList.Add("Bong");
+            }
+        }
+
+        private void applyThirteenRule(int index, List<string> resultList)
+        {
+            if (index % 13 == 0)
+            {
+                if (resultList.Contains("Buzz"))
+                {
+                    resultList.Insert(resultList.IndexOf("Buzz"), "Fezz");
+                }
+                else if (resultList.Contains("Bang"))
+                {
+                    resultList.Insert(resultList.IndexOf("Bang"), "Fezz");
+                }
+                else if (resultList.Contains("Bong"))
+                {
+                    resultList.Insert(resultList.IndexOf("Bong"), "Fezz");
+                }
+                else
+                {
+                    resultList.Add("Fezz");
+                }
+            }
+        }
+
+        private void applySeventeenRule(int index, List<string> resultList)
+        {
+            if (index % 17 == 0)
+            {
+                resultList.Reverse();
+            }
         }
     }
 }
