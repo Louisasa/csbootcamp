@@ -1,0 +1,8 @@
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\bin\Debug\netstandard2.0\fizzBuzz2.deps.json
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\bin\Debug\netstandard2.0\fizzBuzz2.dll
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\bin\Debug\netstandard2.0\fizzBuzz2.pdb
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\obj\Debug\netstandard2.0\fizzBuzz2.csproj.CoreCompileInputs.cache
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\obj\Debug\netstandard2.0\fizzBuzz2.AssemblyInfoInputs.cache
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\obj\Debug\netstandard2.0\fizzBuzz2.AssemblyInfo.cs
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\obj\Debug\netstandard2.0\fizzBuzz2.dll
+C:\Users\LouNas\c#bootcamp\fizzbuzz\fizzBuzz2\fizzBuzz2\obj\Debug\netstandard2.0\fizzBuzz2.pdb

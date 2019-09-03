@@ -1,24 +1,25 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 public class FizzBuzz
 {
     static public void Main(String[] args)
     {
+        //int num = int.Parse(args[0]);
         for (int index = 1; index <= 100; index++)
         {
-            ArrayList resultArrayList = new ArrayList();
+            List<string> resultList = new List<string>();
 
-            checkIfDivisibleByThree(index, resultArrayList);
-            checkIfDivisibleByFive(index, resultArrayList);
-            checkIfDivisibleBySeven(index, resultArrayList);
-            checkIfDivisibleByEleven(index, resultArrayList);
-            checkIfDivisibleByThirteen(index, resultArrayList);
-            checkIfDivisibleBySeventeen(index, resultArrayList);
+            checkIfDivisibleByThree(index, resultList);
+            checkIfDivisibleByFive(index, resultList);
+            checkIfDivisibleBySeven(index, resultList);
+            checkIfDivisibleByEleven(index, resultList);
+            checkIfDivisibleByThirteen(index, resultList);
+            checkIfDivisibleBySeventeen(index, resultList);
 
-            if (resultArrayList.Count > 0)
+            if (resultList.Count > 0)
             {
-                Console.WriteLine(string.Join("", resultArrayList));
+                Console.WriteLine(string.Join("", resultList));
             }
             else
             {
@@ -27,64 +28,64 @@ public class FizzBuzz
         }
     }
 
-    static private void checkIfDivisibleByThree(int index, ArrayList resultArrayList) {
+    static private void checkIfDivisibleByThree(int index, List<string> resultList) {
         if (index % 3 == 0)
         {
-            resultArrayList.Add("Fizz");
+            resultList.Add("Fizz");
         }
     }
 
-    static private void checkIfDivisibleByFive(int index, ArrayList resultArrayList)
+    static private void checkIfDivisibleByFive(int index, List<string> resultList)
     {
         if (index % 5 == 0)
         {
-            resultArrayList.Add("Buzz");
+            resultList.Add("Buzz");
         }
     }
 
-    static private void checkIfDivisibleBySeven(int index, ArrayList resultArrayList)
+    static private void checkIfDivisibleBySeven(int index, List<string> resultList)
     {
         if (index % 7 == 0)
         {
-            resultArrayList.Add("Bang");
+            resultList.Add("Bang");
         }
     }
 
-    static private void checkIfDivisibleByEleven(int index, ArrayList resultArrayList)
+    static private void checkIfDivisibleByEleven(int index, List<string> resultList)
     {
         if (index % 11 == 0)
         {
-            resultArrayList = new ArrayList();
-            resultArrayList.Add("Bong");
+            resultList = new List();
+            resultList.Add("Bong");
         }
     }
 
-    static private void checkIfDivisibleByThirteen(int index, ArrayList resultArrayList)
+    static private void checkIfDivisibleByThirteen(int index, List<string> resultList)
     {
         if (index % 13 == 0)
         {
-            if (resultArrayList.Contains("Buzz"))
+            if (resultList.Contains("Buzz"))
             {
-                resultArrayList.Insert(resultArrayList.IndexOf("Buzz"), "Fezz");
+                resultList.Insert(resultList.IndexOf("Buzz"), "Fezz");
             }
-            else if (resultArrayList.Contains("Bang"))
+            else if (resultList.Contains("Bang"))
             {
-                resultArrayList.Insert(resultArrayList.IndexOf("Bang"), "Fezz");
+                resultList.Insert(resultList.IndexOf("Bang"), "Fezz");
             }
-            else if (resultArrayList.Contains("Bong"))
+            else if (resultList.Contains("Bong"))
             {
-                resultArrayList.Insert(resultArrayList.IndexOf("Bong"), "Fezz");
+                resultList.Insert(resultList.IndexOf("Bong"), "Fezz");
             }
             else
             {
-                resultArrayList.Add("Fezz");
+                resultList.Add("Fezz");
             }
         }
     }
 
-    static private void checkIfDivisibleBySeventeen(int index, ArrayList resultArrayList) {
+    static private void checkIfDivisibleBySeventeen(int index, List<string> resultList) {
         if (index % 17 == 0) {
-            resultArrayList.Reverse();
+            resultList.Reverse();
         }
     }
 }
