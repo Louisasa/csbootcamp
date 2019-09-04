@@ -1,9 +1,9 @@
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\bin\Debug\netstandard2.0\SupportBank.deps.json
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\bin\Debug\netstandard2.0\SupportBank.dll
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\bin\Debug\netstandard2.0\SupportBank.pdb
-C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.csprojAssemblyReference.cache
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.csproj.CoreCompileInputs.cache
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.AssemblyInfoInputs.cache
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.AssemblyInfo.cs
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.dll
 C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.pdb
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportBank\obj\Debug\netstandard2.0\SupportBank.csprojAssemblyReference.cache

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using NLog;
+using NLog.Config;
+using NLog.Targets;
 
 
 namespace SupportBank
@@ -7,8 +10,16 @@ namespace SupportBank
 
     public class Program
     {
+        private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
+
         public static void Main(string[] args)
         {
+            var config = new LoggingConfiguration();
+            var target = new FileTarget { FileName = @"SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
+            config.AddTarget("File Logger", target);
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
+            LogManager.Configuration = config;
+
             List<Transaction> transactionsList = BankFileReader.GetTransactions("Transactions2014.csv");
             var bank = new Bank();
 

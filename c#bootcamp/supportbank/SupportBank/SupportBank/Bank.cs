@@ -6,7 +6,7 @@ public class Bank
 {
 
     private List<Account> allAccounts = new List<Account>();
-    private List<Transaction> allTransactions;
+    private List<Transaction> allTransactions = new List<Transaction>();
 
     public void AddAccounts(List<Transaction> transactionList)
     {

@@ -1,0 +1,10 @@
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\obj\Debug\SupportApp.Console.csproj.CoreCompileInputs.cache
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\bin\Debug\SupportApp.Console.exe.config
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\bin\Debug\SupportApp.Console.exe
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\bin\Debug\SupportApp.Console.pdb
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\bin\Debug\NLog.dll
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\bin\Debug\NLog.xml
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\obj\Debug\SupportApp.Console.csprojAssemblyReference.cache
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\obj\Debug\SupportApp.Console.csproj.CopyComplete
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\obj\Debug\SupportApp.Console.exe
+C:\Users\LouNas\c#bootcamp\supportbank\SupportBank\SupportApp.Console\obj\Debug\SupportApp.Console.pdb
