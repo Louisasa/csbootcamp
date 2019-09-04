@@ -2,10 +2,16 @@
 
 public class FizzBuzz
 {
-    static public void Main(String[] args)
+    public static void Main(String[] args)
     {
-        Console.WriteLine("Please input max num: ");
-        int num = int.Parse(Console.ReadLine());
+        bool successfullyParsed = false;
+        int num;
+        while (!successfullyParsed)
+        {
+            successfullyParsed = int.TryParse(Console.ReadLine(), out num);
+            Console.WriteLine("Please input an integer");
+        }
+
         Console.WriteLine("Please add which rules to include by number separated by a comma: ");
         string rulesString = Console.ReadLine();
         rulesString = rulesString.Replace(" ","");
@@ -29,7 +35,7 @@ public class FizzBuzz
         }
     }
 
-    static private FlagsForRules addFlagsToFlagsForRules(string[] rules)
+    private static FlagsForRules addFlagsToFlagsForRules(string[] rules)
     {
         FlagsForRules flagsForRules = new FlagsForRules();
         foreach (var rule in rules)
