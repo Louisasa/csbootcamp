@@ -6,92 +6,55 @@ namespace SupportBank
     public class Bank
     {
 
-        public static void Main(string[] args)
+        public static List<Account> CreateAccounts(List<Transaction> transactionList)
         {
-            Dictionary<string, Transaction> transactionDictionary = BankFileReader.CreateTransactionDictionary("Transactions2014.csv");
-
-            Console.WriteLine("Please input all or user name for account info.");
-            string input = Console.ReadLine();
-            if (input.ToLower() == "all")
+            List<Account> accountsList = new List<Account>();
+            List<string> accountNamesList = new List<string>();
+            foreach (Transaction transaction in transactionList)
             {
-                outputAllTransactions(transactionDictionary);
-            }
-            else
-            {
-                outputOneTransaction(transactionDictionary, input.ToLower());
-            }
-        }
-
-        private static void outputAllTransactions(Dictionary<string, Transaction> transactionDictionary)
-        {
-            List<string> namesAlreadyDone = new List<string>();
-            foreach (KeyValuePair<string, Transaction> entry in transactionDictionary)
-            {
-                string[] namesInvolvedInTransaction = entry.Key.Split(new string[] { " To " }, StringSplitOptions.None);
-                foreach (string name in namesInvolvedInTransaction)
+                if (!accountNamesList.Contains(transaction.To))
                 {
-                    if (!namesAlreadyDone.Contains(name))
-                    {
-                        namesAlreadyDone.Add(name);
-                        decimal total = totalOwed(transactionDictionary, name);
-
-                        Console.WriteLine(name + " is owed " + total);
-                    }
+                    Account account = new Account(transaction.To, transaction.Amount);
                 }
-            }
-        }
-
-        private static void outputOneTransaction(Dictionary<string, Transaction> trasactionDictionary,
-            string personName)
-        {
-            decimal total = totalOwed(trasactionDictionary, personName);
-            Console.WriteLine(personName + " is owed " + total);
-        }
-
-        private static decimal totalOwed(Dictionary<string, Transaction> transactionDictionary, string personName)
-        {
-            List<Transaction> transactionDetails = findTransactionDetails(transactionDictionary, personName);
-
-            if (transactionDetails != null)
-            {
-
-                decimal totalOwed = 0;
-                foreach (Transaction transaction in transactionDetails)
+                else
                 {
-                    if (transaction.to == personName)
-                    {
-                        totalOwed += transaction.amount;
-                    }
-                    else if (transaction.from == personName)
-                    {
-                        totalOwed -= transaction.amount;
-                    }
+                    accountsList[accountNamesList.IndexOf(transaction.To)].changeBalance(transaction.Amount);
                 }
 
-                return totalOwed;
-            }
-
-            return 0;
-        }
-
-        private static List<Transaction> findTransactionDetails(Dictionary<string, Transaction> transactionDictionary, string person)
-        {
-            List<Transaction> resultList = new List<Transaction>();
-            foreach (KeyValuePair<string, Transaction> entry in transactionDictionary)
-            {
-                if (entry.Key.Contains(person))
+                if (!accountNamesList.Contains(transaction.From))
                 {
-                    resultList.Add(entry.Value);
+                    Account account = new Account(transaction.From, transaction.Amount);
+                }
+                else
+                {
+                    accountsList[accountNamesList.IndexOf(transaction.From)].changeBalance(transaction.Amount);
                 }
             }
 
-            if (resultList.Count == 0)
+            return accountsList;
+        }
+
+        public static Dictionary<string, decimal> OutputAllAccounts(List<Account> allAccounts)
+        {
+            Dictionary<string, decimal> accountsInfo = new Dictionary<string, decimal>();
+            foreach (Account account in allAccounts)
             {
-                Console.WriteLine("Please input a valid name.");
-                return null;
+                accountsInfo[account.Name] = account.Balance;
             }
 
-            return resultList;
+            return accountsInfo;
+        }
+        public static Dictionary<string, decimal> OutputOneAccount(List<Account> allAccounts, string personName)
+        {
+            decimal total = 0;
+            foreach (Account account in allAccounts)
+            {
+                if (account.Name == personName)
+                {
+                    total = account.Balance;
+                }
+            }
+            return new Dictionary<string, decimal>() {{personName, total}};
         }
     }
 }
