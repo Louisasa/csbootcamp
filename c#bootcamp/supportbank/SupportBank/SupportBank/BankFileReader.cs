@@ -7,11 +7,11 @@ public class BankFileReader
 {
     public static List<Transaction> GetTransactions(string fileName)
     {
-    StreamReader reader = new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportBank/" + fileName));
+        StreamReader reader = new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportBank/" + fileName));
 
-    Dictionary<string, int> headers = GetHeaders(reader);
+        Dictionary<string, int> headers = GetHeaders(reader);
 
-    return CreateTransactions(reader, headers);
+        return CreateTransactions(reader, headers);
     }
 
     private static Dictionary<string, int> GetHeaders(StreamReader reader)
