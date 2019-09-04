@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Bank
 {
 
-    private List<Account> allAccounts;
+    private List<Account> allAccounts = new List<Account>();
     private List<Transaction> allTransactions;
 
-    public List<Account> CreateAccounts(List<Transaction> transactionList)
+    public void AddAccounts(List<Transaction> transactionList)
     {
-        List<Account> accountsList = new List<Account>();
         List<string> accountNamesList = new List<string>();
         foreach (Transaction transaction in transactionList)
         {
@@ -17,29 +17,26 @@ public class Bank
             {
                 Account account = new Account(transaction.To, transaction.Amount);
                 accountNamesList.Add(account.Name);
-                accountsList.Add(account);
+                allAccounts.Add(account);
             }
             else
             {
-                accountsList[accountNamesList.IndexOf(transaction.To)].changeBalance(transaction.Amount);
+                allAccounts[accountNamesList.IndexOf(transaction.To)].changeBalance(transaction.Amount);
             }
 
             if (!accountNamesList.Contains(transaction.From))
             {
                 Account account = new Account(transaction.From, transaction.Amount);
                 accountNamesList.Add(account.Name);
-                accountsList.Add(account);
+                allAccounts.Add(account);
             }
             else
             {
-                accountsList[accountNamesList.IndexOf(transaction.From)].changeBalance(transaction.Amount);
+                allAccounts[accountNamesList.IndexOf(transaction.From)].changeBalance(transaction.Amount);
             }
         }
 
-        allAccounts = accountsList;
-        allTransactions = transactionList;
-
-        return accountsList;
+        allTransactions.AddRange(transactionList);
     }
 
     public Dictionary<string, decimal> OutputAllAccounts()
@@ -55,15 +52,6 @@ public class Bank
 
     public List<Transaction> GetPersonsTransactions(string personName)
     {
-        List<Transaction> resultTransactions = new List<Transaction>();
-        foreach (Transaction transaction in allTransactions)
-        {
-            if (transaction.From == personName || transaction.To == personName)
-            {
-                resultTransactions.Add(transaction);
-            }
-        }
-
-        return resultTransactions;
+        return allTransactions.Where(transaction => transaction.From == personName || transaction.To == personName).ToList();
     }
 }

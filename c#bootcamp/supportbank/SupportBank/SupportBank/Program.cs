@@ -12,7 +12,7 @@ namespace SupportBank
             List<Transaction> transactionsList = BankFileReader.GetTransactions("Transactions2014.csv");
             var bank = new Bank();
 
-            List<Account> accountsList = bank.CreateAccounts(transactionsList);
+            bank.AddAccounts(transactionsList);
 
             Console.WriteLine("Please input all or user name for account info.");
             string input = Console.ReadLine();
