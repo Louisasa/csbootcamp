@@ -10,25 +10,43 @@ namespace SupportBank
         public static void Main(string[] args)
         {
             List<Transaction> transactionsList = BankFileReader.GetTransactions("Transactions2014.csv");
+            var bank = new Bank();
 
-            List<Account> accountsList = Bank.CreateAccounts(transactionsList);
+            List<Account> accountsList = bank.CreateAccounts(transactionsList);
 
             Console.WriteLine("Please input all or user name for account info.");
             string input = Console.ReadLine();
-            Dictionary<string, decimal> accountsInfo = new Dictionary<string, decimal>();
+            
             if (input.ToLower() == "all")
             {
-                accountsInfo = Bank.OutputAllAccounts(accountsList);
+                OutputAllAccounts(bank);
             }
             else
             {
-                accountsInfo = Bank.OutputOneAccount(accountsList, input.ToLower());
+                OutputOnePersonsTransactions(bank, input.ToLower());
             }
 
-            printAccountsInfo(accountsInfo);
+            
         }
 
-        private static void printAccountsInfo(Dictionary<string, decimal> accountsInfo)
+        private static void OutputAllAccounts(Bank bank)
+        {
+            Dictionary<string, decimal> accountsInfo = bank.OutputAllAccounts();
+            PrintAccountsInfo(accountsInfo);
+        }
+
+        private static void OutputOnePersonsTransactions(Bank bank, String personName)
+        {
+            List<Transaction> resultTransactions = bank.GetPersonsTransactions(personName);
+
+            Console.WriteLine(personName+":");
+            foreach (Transaction transaction in resultTransactions)
+            {
+                Console.WriteLine(transaction.ToString());
+            }
+        }
+
+        private static void PrintAccountsInfo(Dictionary<string, decimal> accountsInfo)
         {
             foreach (KeyValuePair<string, decimal> entry in accountsInfo)
             {

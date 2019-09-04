@@ -19,6 +19,6 @@ public class Transaction
 
     public override string ToString()
     {
-        return "Date: " + Date + " To: " + To + " From: " + From + " Amount: " + Amount;
+        return "Date: " + Date + " To: " + To + " From: " + From + " Narrative: " + Narrative + " Amount: " + Amount;
     }
 }

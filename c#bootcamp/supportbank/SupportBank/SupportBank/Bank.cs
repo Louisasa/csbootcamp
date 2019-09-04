@@ -4,7 +4,10 @@ using System.Collections.Generic;
 public class Bank
 {
 
-    public static List<Account> CreateAccounts(List<Transaction> transactionList)
+    private List<Account> allAccounts;
+    private List<Transaction> allTransactions;
+
+    public List<Account> CreateAccounts(List<Transaction> transactionList)
     {
         List<Account> accountsList = new List<Account>();
         List<string> accountNamesList = new List<string>();
@@ -33,10 +36,13 @@ public class Bank
             }
         }
 
+        allAccounts = accountsList;
+        allTransactions = transactionList;
+
         return accountsList;
     }
 
-    public static Dictionary<string, decimal> OutputAllAccounts(List<Account> allAccounts)
+    public Dictionary<string, decimal> OutputAllAccounts()
     {
         Dictionary<string, decimal> accountsInfo = new Dictionary<string, decimal>();
         foreach (Account account in allAccounts)
@@ -46,16 +52,18 @@ public class Bank
 
         return accountsInfo;
     }
-    public static Dictionary<string, decimal> OutputOneAccount(List<Account> allAccounts, string personName)
+
+    public List<Transaction> GetPersonsTransactions(string personName)
     {
-        decimal total = 0;
-        foreach (Account account in allAccounts)
+        List<Transaction> resultTransactions = new List<Transaction>();
+        foreach (Transaction transaction in allTransactions)
         {
-            if (account.Name == personName)
+            if (transaction.From == personName || transaction.To == personName)
             {
-                total = account.Balance;
+                resultTransactions.Add(transaction);
             }
         }
-        return new Dictionary<string, decimal>() {{personName, total}};
+
+        return resultTransactions;
     }
 }
