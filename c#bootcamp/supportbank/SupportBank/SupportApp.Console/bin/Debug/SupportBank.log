@@ -1,27 +1,590 @@
-2019-09-04 15:37:12.3199 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3418 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3418 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3418 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3418 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3588 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3588 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3588 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3588 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3738 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3738 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3738 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3738 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3738 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.3901 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4070 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4070 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4070 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4070 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4220 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4220 Debug - BankFileReader: idk man
-2019-09-04 15:37:12.4220 Debug - BankFileReader: idk man
+2019-09-04 16:07:48.2906 Debug - SupportBank.Program: 145
+2019-09-04 16:07:48.3175 Debug - Bank: Date: 2013-01-01T00:00:00 To:  From:  Narrative: Sandbox Help Amount: 2.14
+2019-09-04 16:07:48.3175 Debug - Bank: Date: 2013-01-04T00:00:00 To:  From:  Narrative: Coffee Amount: 10.53
+2019-09-04 16:07:48.3175 Debug - Bank: Date: 2013-01-05T00:00:00 To:  From:  Narrative: Sandcastle Help Amount: 10.57
+2019-09-04 16:07:48.3305 Debug - Bank: Date: 2013-01-09T00:00:00 To:  From:  Narrative: Coffee Amount: 8.19
+2019-09-04 16:07:48.3305 Debug - Bank: Date: 2013-01-13T00:00:00 To:  From:  Narrative: Coffee Amount: 1.01
+2019-09-04 16:07:48.3305 Debug - Bank: Date: 2013-01-15T00:00:00 To:  From:  Narrative: Golf Bets Amount: 2.71
+2019-09-04 16:07:48.3427 Debug - Bank: Date: 2013-01-18T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 7.17
+2019-09-04 16:07:48.3427 Debug - Bank: Date: 2013-01-22T00:00:00 To:  From:  Narrative: Sandcastle Help Amount: 11.12
+2019-09-04 16:07:48.3427 Debug - Bank: Date: 2013-01-25T00:00:00 To:  From:  Narrative: Coffee Amount: 4.86
+2019-09-04 16:07:48.3427 Debug - Bank: Date: 2013-01-28T00:00:00 To:  From:  Narrative: Services Rendered Amount: 1.92
+2019-09-04 16:07:48.3427 Debug - Bank: Date: 2013-01-30T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 11.95
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-01-31T00:00:00 To:  From:  Narrative: Poker Winnings Amount: 7.55
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-02-04T00:00:00 To:  From:  Narrative: Arcade Social Amount: 5.52
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-02-06T00:00:00 To:  From:  Narrative: Snooker Night Amount: 8.07
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-02-07T00:00:00 To:  From:  Narrative: Beers Amount: 7.63
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-02-10T00:00:00 To:  From:  Narrative: Snooker Night Amount: 10.4
+2019-09-04 16:07:48.3574 Debug - Bank: Date: 2013-02-12T00:00:00 To:  From:  Narrative: Misc Morale Amount: 5.76
+2019-09-04 16:07:48.3743 Debug - Bank: Date: 2013-02-15T00:00:00 To:  From:  Narrative: Lunch Amount: 1.54
+2019-09-04 16:07:48.3743 Debug - Bank: Date: 2013-02-18T00:00:00 To:  From:  Narrative: Coffee Amount: 6.98
+2019-09-04 16:07:48.3743 Debug - Bank: Date: 2013-02-22T00:00:00 To:  From:  Narrative: Lunch Amount: 8.77
+2019-09-04 16:07:48.3743 Debug - Bank: Date: 2013-02-26T00:00:00 To:  From:  Narrative: Audit and Other Financial Services Amount: 5.94
+2019-09-04 16:07:48.3743 Debug - Bank: Date: 2013-02-27T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 10.58
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-02T00:00:00 To:  From:  Narrative: Audit and Other Financial Services Amount: 1.73
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-06T00:00:00 To:  From:  Narrative: Stationary Items Amount: 7.26
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-08T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 6.2
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-12T00:00:00 To:  From:  Narrative: Automated Testing Services Amount: 0.9
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-14T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 8.97
+2019-09-04 16:07:48.3883 Debug - Bank: Date: 2013-03-17T00:00:00 To:  From:  Narrative: Audit and Other Financial Services Amount: 3.34
+2019-09-04 16:07:48.4067 Debug - Bank: Date: 2013-03-20T00:00:00 To:  From:  Narrative: Stationary Items Amount: 2.85
+2019-09-04 16:07:48.4067 Debug - Bank: Date: 2013-03-22T00:00:00 To:  From:  Narrative: Git-Fu Rendered Amount: 4.15
+2019-09-04 16:07:48.4067 Debug - Bank: Date: 2013-03-24T00:00:00 To:  From:  Narrative: Coffee Amount: 2.39
+2019-09-04 16:07:48.4067 Debug - Bank: Date: 2013-03-27T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 7.82
+2019-09-04 16:07:48.4207 Debug - Bank: Date: 2013-03-28T00:00:00 To:  From:  Narrative: Sandbox Help Amount: 6.36
+2019-09-04 16:07:48.4207 Debug - Bank: Date: 2013-04-01T00:00:00 To:  From:  Narrative: Coffee Amount: 4.77
+2019-09-04 16:07:48.4207 Debug - Bank: Date: 2013-04-03T00:00:00 To:  From:  Narrative: Lunch Amount: 2.64
+2019-09-04 16:07:48.4207 Debug - Bank: Date: 2013-04-05T00:00:00 To:  From:  Narrative: Coffee Amount: 3.4
+2019-09-04 16:07:48.4207 Debug - Bank: Date: 2013-04-08T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 4.27
+2019-09-04 16:07:48.4366 Debug - Bank: Date: 2013-04-09T00:00:00 To:  From:  Narrative: Misc Morale Amount: 2.6
+2019-09-04 16:07:48.4366 Debug - Bank: Date: 2013-04-11T00:00:00 To:  From:  Narrative: Lunch Amount: 3
+2019-09-04 16:07:48.4366 Debug - Bank: Date: 2013-04-15T00:00:00 To:  From:  Narrative: Coffee Amount: 5.49
+2019-09-04 16:07:48.4366 Debug - Bank: Date: 2013-04-18T00:00:00 To:  From:  Narrative: Lunch Amount: 9.07
+2019-09-04 16:07:48.4546 Debug - Bank: Date: 2013-04-21T00:00:00 To:  From:  Narrative: Sandcastle Help Amount: 5.32
+2019-09-04 16:07:48.4546 Debug - Bank: Date: 2013-04-24T00:00:00 To:  From:  Narrative: Fantasy Football Amount: 1.15
+2019-09-04 16:07:48.4546 Debug - Bank: Date: 2013-04-25T00:00:00 To:  From:  Narrative: Coffee Amount: 2.47
+2019-09-04 16:07:48.4665 Debug - Bank: Date: 2013-04-26T00:00:00 To:  From:  Narrative: Misc Morale Amount: 9.1
+2019-09-04 16:07:48.4665 Debug - Bank: Date: 2013-04-27T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 9.91
+2019-09-04 16:07:48.4665 Debug - Bank: Date: 2013-05-01T00:00:00 To:  From:  Narrative: Git-Fu Rendered Amount: 9.85
+2019-09-04 16:07:48.4665 Debug - Bank: Date: 2013-05-04T00:00:00 To:  From:  Narrative: Coffee Amount: 1.34
+2019-09-04 16:07:48.4845 Debug - Bank: Date: 2013-05-05T00:00:00 To:  From:  Narrative: Beers Amount: 0.51
+2019-09-04 16:07:48.4845 Debug - Bank: Date: 2013-05-06T00:00:00 To:  From:  Narrative: Git-Fu Rendered Amount: 4.92
+2019-09-04 16:07:48.4845 Debug - Bank: Date: 2013-05-08T00:00:00 To:  From:  Narrative: Coffee Amount: 5.94
+2019-09-04 16:07:48.4845 Debug - Bank: Date: 2013-05-09T00:00:00 To:  From:  Narrative: White Water Rafting Amount: 2.27
+2019-09-04 16:07:48.4984 Debug - Bank: Date: 2013-05-13T00:00:00 To:  From:  Narrative: Coffee Amount: 11.07
+2019-09-04 16:07:48.4984 Debug - Bank: Date: 2013-05-14T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 9.96
+2019-09-04 16:07:48.4984 Debug - Bank: Date: 2013-05-18T00:00:00 To:  From:  Narrative: Lunch Amount: 11.94
+2019-09-04 16:07:48.4984 Debug - Bank: Date: 2013-05-22T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 9.24
+2019-09-04 16:07:48.4984 Debug - Bank: Date: 2013-05-25T00:00:00 To:  From:  Narrative: Sandbox Help Amount: 2.85
+2019-09-04 16:07:48.5164 Debug - Bank: Date: 2013-05-29T00:00:00 To:  From:  Narrative: Audit and Other Financial Services Amount: 1.51
+2019-09-04 16:07:48.5164 Debug - Bank: Date: 2013-06-02T00:00:00 To:  From:  Narrative: Golf Bets Amount: 11.83
+2019-09-04 16:07:48.5164 Debug - Bank: Date: 2013-06-03T00:00:00 To:  From:  Narrative: Lunch Amount: 2.16
+2019-09-04 16:07:48.5164 Debug - Bank: Date: 2013-06-05T00:00:00 To:  From:  Narrative: Golf Bets Amount: 1.96
+2019-09-04 16:07:48.5303 Debug - Bank: Date: 2013-06-06T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 1.06
+2019-09-04 16:07:48.5303 Debug - Bank: Date: 2013-06-10T00:00:00 To:  From:  Narrative: Lego Assistance Amount: 10.81
+2019-09-04 16:07:48.5303 Debug - Bank: Date: 2013-06-12T00:00:00 To:  From:  Narrative: Sandcastle Help Amount: 6.75
+2019-09-04 16:07:48.5303 Debug - Bank: Date: 2013-06-13T00:00:00 To:  From:  Narrative: Poker Winnings Amount: 5.15
+2019-09-04 16:07:48.5453 Debug - Bank: Date: 2013-06-16T00:00:00 To:  From:  Narrative: Misc Morale Amount: 9.24
+2019-09-04 16:07:48.5453 Debug - Bank: Date: 2013-06-19T00:00:00 To:  From:  Narrative: Coffee Amount: 3.68
+2019-09-04 16:07:48.5453 Debug - Bank: Date: 2013-06-21T00:00:00 To:  From:  Narrative: Lunch Amount: 5.43
+2019-09-04 16:07:48.5453 Debug - Bank: Date: 2013-06-22T00:00:00 To:  From:  Narrative: Stationary Items Amount: 0.98
+2019-09-04 16:07:48.5453 Debug - Bank: Date: 2013-06-23T00:00:00 To:  From:  Narrative: Audit and Other Financial Services Amount: 6.12
+2019-09-04 16:07:48.5632 Debug - Bank: Date: 2013-06-26T00:00:00 To:  From:  Narrative: Lunch Amount: 8.39
+2019-09-04 16:07:48.5632 Debug - Bank: Date: 2013-06-27T00:00:00 To:  From:  Narrative: Beers Amount: 10.41
+2019-09-04 16:07:48.5632 Debug - Bank: Date: 2013-06-30T00:00:00 To:  From:  Narrative: Lunch Amount: 6.51
+2019-09-04 16:07:48.5762 Debug - Bank: Date: 2013-07-01T00:00:00 To:  From:  Narrative: Misc Morale Amount: 1.48
+2019-09-04 16:07:48.5762 Debug - Bank: Date: 2013-07-04T00:00:00 To:  From:  Narrative: Poker Winnings Amount: 5.63
+2019-09-04 16:07:48.5762 Debug - Bank: Date: 2013-07-05T00:00:00 To:  From:  Narrative: Lunch Amount: 6.73
+2019-09-04 16:07:48.5762 Debug - Bank: Date: 2013-07-07T00:00:00 To:  From:  Narrative: Lunch Amount: 6.69
+2019-09-04 16:07:48.5762 Debug - Bank: Date: 2013-07-10T00:00:00 To:  From:  Narrative: Lunch Amount: 3.88
+2019-09-04 16:07:48.5944 Debug - Bank: Date: 2013-07-13T00:00:00 To:  From:  Narrative: Misc Morale Amount: 2.08
+2019-09-04 16:07:48.5944 Debug - Bank: Date: 2013-07-16T00:00:00 To:  From:  Narrative: Coffee Amount: 6.95
+2019-09-04 16:07:48.5944 Debug - Bank: Date: 2013-07-19T00:00:00 To:  From:  Narrative: Arcade Social Amount: 3.21
+2019-09-04 16:07:48.5944 Debug - Bank: Date: 2013-07-23T00:00:00 To:  From:  Narrative: Services Rendered Amount: 11.17
+2019-09-04 16:07:48.6094 Debug - Bank: Date: 2013-07-27T00:00:00 To:  From:  Narrative: Coffee Amount: 4.29
+2019-09-04 16:07:48.6094 Debug - Bank: Date: 2013-07-30T00:00:00 To:  From:  Narrative: Beers Amount: 0.69
+2019-09-04 16:07:48.6094 Debug - Bank: Date: 2013-07-31T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 1.2
+2019-09-04 16:07:48.6094 Debug - Bank: Date: 2013-08-01T00:00:00 To:  From:  Narrative: Lunch Amount: 11.18
+2019-09-04 16:07:48.6241 Debug - Bank: Date: 2013-08-05T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 11.34
+2019-09-04 16:07:48.6241 Debug - Bank: Date: 2013-08-07T00:00:00 To:  From:  Narrative: Poker Winnings Amount: 10.78
+2019-09-04 16:07:48.6241 Debug - Bank: Date: 2013-08-08T00:00:00 To:  From:  Narrative: Lunch Amount: 10.07
+2019-09-04 16:07:48.6241 Debug - Bank: Date: 2013-08-11T00:00:00 To:  From:  Narrative: Lunch Amount: 7.27
+2019-09-04 16:07:48.6390 Debug - Bank: Date: 2013-08-13T00:00:00 To:  From:  Narrative: Sandcastle Help Amount: 9.96
+2019-09-04 16:07:48.6390 Debug - Bank: Date: 2013-08-16T00:00:00 To:  From:  Narrative: Misc Morale Amount: 10.91
+2019-09-04 16:07:48.6390 Debug - Bank: Date: 2013-08-19T00:00:00 To:  From:  Narrative: Coffee Amount: 7.51
+2019-09-04 16:07:48.6540 Debug - Bank: Date: 2013-08-22T00:00:00 To:  From:  Narrative: Misc Morale Amount: 7.05
+2019-09-04 16:07:48.6540 Debug - Bank: Date: 2013-08-23T00:00:00 To:  From:  Narrative: Beers Amount: 0.6
+2019-09-04 16:07:48.6540 Debug - Bank: Date: 2013-08-26T00:00:00 To:  From:  Narrative: Lunch Amount: 3.85
+2019-09-04 16:07:48.6540 Debug - Bank: Date: 2013-08-27T00:00:00 To:  From:  Narrative: Fantasy Football Amount: 5.45
+2019-09-04 16:07:48.6719 Debug - Bank: Date: 2013-08-28T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 11.13
+2019-09-04 16:07:48.6719 Debug - Bank: Date: 2013-08-31T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 5.54
+2019-09-04 16:07:48.6719 Debug - Bank: Date: 2013-09-03T00:00:00 To:  From:  Narrative: Coffee Amount: 9.48
+2019-09-04 16:07:48.6719 Debug - Bank: Date: 2013-09-05T00:00:00 To:  From:  Narrative: Lunch Amount: 10.58
+2019-09-04 16:07:48.6886 Debug - Bank: Date: 2013-09-07T00:00:00 To:  From:  Narrative: Lunch Amount: 3.32
+2019-09-04 16:07:48.6886 Debug - Bank: Date: 2013-09-10T00:00:00 To:  From:  Narrative: Misc Morale Amount: 8.68
+2019-09-04 16:07:48.6886 Debug - Bank: Date: 2013-09-12T00:00:00 To:  From:  Narrative: Lego Assistance Amount: 2.53
+2019-09-04 16:07:48.7031 Debug - Bank: Date: 2013-09-13T00:00:00 To:  From:  Narrative: Services Rendered Amount: 1.96
+2019-09-04 16:07:48.7031 Debug - Bank: Date: 2013-09-16T00:00:00 To:  From:  Narrative: Beers Amount: 2.81
+2019-09-04 16:07:48.7031 Debug - Bank: Date: 2013-09-19T00:00:00 To:  From:  Narrative: Beers Amount: 5.52
+2019-09-04 16:07:48.7176 Debug - Bank: Date: 2013-09-22T00:00:00 To:  From:  Narrative: Sandbox Help Amount: 9.28
+2019-09-04 16:07:48.7176 Debug - Bank: Date: 2013-09-23T00:00:00 To:  From:  Narrative: Coffee Amount: 5.13
+2019-09-04 16:07:48.7176 Debug - Bank: Date: 2013-09-27T00:00:00 To:  From:  Narrative: Stationary Items Amount: 7.05
+2019-09-04 16:07:48.7345 Debug - Bank: Date: 2013-10-01T00:00:00 To:  From:  Narrative: Coffee Amount: 10.13
+2019-09-04 16:07:48.7345 Debug - Bank: Date: 2013-10-04T00:00:00 To:  From:  Narrative: Coffee Amount: 5.96
+2019-09-04 16:07:48.7345 Debug - Bank: Date: 2013-10-08T00:00:00 To:  From:  Narrative: Lunch Amount: 5.33
+2019-09-04 16:07:48.7519 Debug - Bank: Date: 2013-10-11T00:00:00 To:  From:  Narrative: Lunch Amount: 10.62
+2019-09-04 16:07:48.7519 Debug - Bank: Date: 2013-10-12T00:00:00 To:  From:  Narrative: Jenkins Fees Amount: 7.78
+2019-09-04 16:07:48.7519 Debug - Bank: Date: 2013-10-16T00:00:00 To:  From:  Narrative: Arcade Social Amount: 5.71
+2019-09-04 16:07:48.7646 Debug - Bank: Date: 2013-10-17T00:00:00 To:  From:  Narrative: Arcade Social Amount: 7.71
+2019-09-04 16:07:48.7646 Debug - Bank: Date: 2013-10-20T00:00:00 To:  From:  Narrative: Lunch Amount: 10.6
+2019-09-04 16:07:48.7646 Debug - Bank: Date: 2013-10-23T00:00:00 To:  From:  Narrative: Lego Assistance Amount: 3.42
+2019-09-04 16:07:48.7646 Debug - Bank: Date: 2013-10-27T00:00:00 To:  From:  Narrative: Misc Morale Amount: 6.89
+2019-09-04 16:07:48.7801 Debug - Bank: Date: 2013-10-29T00:00:00 To:  From:  Narrative: Misc Morale Amount: 9.99
+2019-09-04 16:07:48.7801 Debug - Bank: Date: 2013-11-01T00:00:00 To:  From:  Narrative: Lunch Amount: 7.01
+2019-09-04 16:07:48.7801 Debug - Bank: Date: 2013-11-05T00:00:00 To:  From:  Narrative: Spline Reticulation Amount: 8.3
+2019-09-04 16:07:48.7801 Debug - Bank: Date: 2013-11-07T00:00:00 To:  From:  Narrative: Lunch Amount: 10.09
+2019-09-04 16:07:48.7951 Debug - Bank: Date: 2013-11-09T00:00:00 To:  From:  Narrative: Stationary Items Amount: 11
+2019-09-04 16:07:48.7951 Debug - Bank: Date: 2013-11-12T00:00:00 To:  From:  Narrative: Misc Morale Amount: 1.25
+2019-09-04 16:07:48.7951 Debug - Bank: Date: 2013-11-15T00:00:00 To:  From:  Narrative: Sandbox Help Amount: 9.13
+2019-09-04 16:07:48.7951 Debug - Bank: Date: 2013-11-18T00:00:00 To:  From:  Narrative: Services Rendered Amount: 9.4
+2019-09-04 16:07:48.7951 Debug - Bank: Date: 2013-11-21T00:00:00 To:  From:  Narrative: Misc Morale Amount: 2.53
+2019-09-04 16:07:48.8140 Debug - Bank: Date: 2013-11-24T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 7.59
+2019-09-04 16:07:48.8140 Debug - Bank: Date: 2013-11-28T00:00:00 To:  From:  Narrative: Golf Bets Amount: 2.15
+2019-09-04 16:07:48.8140 Debug - Bank: Date: 2013-11-29T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 4.01
+2019-09-04 16:07:48.8270 Debug - Bank: Date: 2013-12-01T00:00:00 To:  From:  Narrative: Lunch Amount: 6.35
+2019-09-04 16:07:48.8270 Debug - Bank: Date: 2013-12-02T00:00:00 To:  From:  Narrative: Misc Morale Amount: 10.19
+2019-09-04 16:07:48.8270 Debug - Bank: Date: 2013-12-05T00:00:00 To:  From:  Narrative: Coffee Amount: 9
+2019-09-04 16:07:48.8270 Debug - Bank: Date: 2013-12-09T00:00:00 To:  From:  Narrative: Rails Consultancy Amount: 9.39
+2019-09-04 16:07:48.8270 Debug - Bank: Date: 2013-12-12T00:00:00 To:  From:  Narrative: Coffee Amount: 11.44
+2019-09-04 16:07:48.8449 Debug - Bank: Date: 2013-12-13T00:00:00 To:  From:  Narrative: Misc Morale Amount: 9.19
+2019-09-04 16:07:48.8449 Debug - Bank: Date: 2013-12-17T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:07:48.8449 Debug - Bank: Date: 2013-12-19T00:00:00 To:  From:  Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:07:48.8449 Debug - Bank: Date: 2013-12-22T00:00:00 To:  From:  Narrative: Lunch Amount: 1.32
+2019-09-04 16:07:48.8579 Debug - Bank: Date: 2013-12-24T00:00:00 To:  From:  Narrative: Snooker Night Amount: 10.14
+2019-09-04 16:07:48.8579 Debug - Bank: Date: 2013-12-27T00:00:00 To:  From:  Narrative: Spline Reticulation Amount: 4.34
+2019-09-04 16:07:48.8579 Debug - Bank: Date: 2013-12-28T00:00:00 To:  From:  Narrative: Beers Amount: 5.99
+2019-09-04 16:07:48.8579 Debug - Bank: Date: 2013-12-30T00:00:00 To:  From:  Narrative: Misc Morale Amount: 2.54
+2019-09-04 16:09:24.6478 Debug - SupportBank.Program: 145
+2019-09-04 16:09:24.6749 Debug - Bank: Date: 2013-01-01T00:00:00 ToAccount: Gergana I FromAccount: Jon A Narrative: Sandbox Help Amount: 2.14
+2019-09-04 16:09:24.6749 Debug - Bank: Date: 2013-01-04T00:00:00 ToAccount: Dan W FromAccount: Chris W Narrative: Coffee Amount: 10.53
+2019-09-04 16:09:24.6749 Debug - Bank: Date: 2013-01-05T00:00:00 ToAccount: Tim L FromAccount: Stephen S Narrative: Sandcastle Help Amount: 10.57
+2019-09-04 16:09:24.6869 Debug - Bank: Date: 2013-01-09T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Coffee Amount: 8.19
+2019-09-04 16:09:24.6869 Debug - Bank: Date: 2013-01-13T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Coffee Amount: 1.01
+2019-09-04 16:09:24.6869 Debug - Bank: Date: 2013-01-15T00:00:00 ToAccount: Laura B FromAccount: Todd Narrative: Golf Bets Amount: 2.71
+2019-09-04 16:09:24.6869 Debug - Bank: Date: 2013-01-18T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 7.17
+2019-09-04 16:09:24.7038 Debug - Bank: Date: 2013-01-22T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Sandcastle Help Amount: 11.12
+2019-09-04 16:09:24.7038 Debug - Bank: Date: 2013-01-25T00:00:00 ToAccount: Jon A FromAccount: Ben B Narrative: Coffee Amount: 4.86
+2019-09-04 16:09:24.7038 Debug - Bank: Date: 2013-01-28T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.92
+2019-09-04 16:09:24.7038 Debug - Bank: Date: 2013-01-30T00:00:00 ToAccount: Todd FromAccount: Sarah T Narrative: Jenkins Fees Amount: 11.95
+2019-09-04 16:09:24.7178 Debug - Bank: Date: 2013-01-31T00:00:00 ToAccount: Chris W FromAccount: Sarah T Narrative: Poker Winnings Amount: 7.55
+2019-09-04 16:09:24.7178 Debug - Bank: Date: 2013-02-04T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Arcade Social Amount: 5.52
+2019-09-04 16:09:24.7178 Debug - Bank: Date: 2013-02-06T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Snooker Night Amount: 8.07
+2019-09-04 16:09:24.7178 Debug - Bank: Date: 2013-02-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Beers Amount: 7.63
+2019-09-04 16:09:24.7337 Debug - Bank: Date: 2013-02-10T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Snooker Night Amount: 10.4
+2019-09-04 16:09:24.7337 Debug - Bank: Date: 2013-02-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Misc Morale Amount: 5.76
+2019-09-04 16:09:24.7337 Debug - Bank: Date: 2013-02-15T00:00:00 ToAccount: Chris W FromAccount: Sam N Narrative: Lunch Amount: 1.54
+2019-09-04 16:09:24.7337 Debug - Bank: Date: 2013-02-18T00:00:00 ToAccount: Sam N FromAccount: Sarah T Narrative: Coffee Amount: 6.98
+2019-09-04 16:09:24.7337 Debug - Bank: Date: 2013-02-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Lunch Amount: 8.77
+2019-09-04 16:09:24.7517 Debug - Bank: Date: 2013-02-26T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Audit and Other Financial Services Amount: 5.94
+2019-09-04 16:09:24.7517 Debug - Bank: Date: 2013-02-27T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Rails Consultancy Amount: 10.58
+2019-09-04 16:09:24.7517 Debug - Bank: Date: 2013-03-02T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Audit and Other Financial Services Amount: 1.73
+2019-09-04 16:09:24.7667 Debug - Bank: Date: 2013-03-06T00:00:00 ToAccount: Sam N FromAccount: Laura B Narrative: Stationary Items Amount: 7.26
+2019-09-04 16:09:24.7667 Debug - Bank: Date: 2013-03-08T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Pokemon Training Amount: 6.2
+2019-09-04 16:09:24.7667 Debug - Bank: Date: 2013-03-12T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Automated Testing Services Amount: 0.9
+2019-09-04 16:09:24.7806 Debug - Bank: Date: 2013-03-14T00:00:00 ToAccount: Chris W FromAccount: Todd Narrative: Rails Consultancy Amount: 8.97
+2019-09-04 16:09:24.7806 Debug - Bank: Date: 2013-03-17T00:00:00 ToAccount: Chris W FromAccount: Dan W Narrative: Audit and Other Financial Services Amount: 3.34
+2019-09-04 16:09:24.7806 Debug - Bank: Date: 2013-03-20T00:00:00 ToAccount: Rob S FromAccount: Gergana I Narrative: Stationary Items Amount: 2.85
+2019-09-04 16:09:24.7806 Debug - Bank: Date: 2013-03-22T00:00:00 ToAccount: Laura B FromAccount: Chris W Narrative: Git-Fu Rendered Amount: 4.15
+2019-09-04 16:09:24.7976 Debug - Bank: Date: 2013-03-24T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Coffee Amount: 2.39
+2019-09-04 16:09:24.7976 Debug - Bank: Date: 2013-03-27T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Jenkins Fees Amount: 7.82
+2019-09-04 16:09:24.7976 Debug - Bank: Date: 2013-03-28T00:00:00 ToAccount: Stephen S FromAccount: Ben B Narrative: Sandbox Help Amount: 6.36
+2019-09-04 16:09:24.8115 Debug - Bank: Date: 2013-04-01T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Coffee Amount: 4.77
+2019-09-04 16:09:24.8115 Debug - Bank: Date: 2013-04-03T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Lunch Amount: 2.64
+2019-09-04 16:09:24.8115 Debug - Bank: Date: 2013-04-05T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Coffee Amount: 3.4
+2019-09-04 16:09:24.8115 Debug - Bank: Date: 2013-04-08T00:00:00 ToAccount: Todd FromAccount: Tim L Narrative: Jenkins Fees Amount: 4.27
+2019-09-04 16:09:24.8115 Debug - Bank: Date: 2013-04-09T00:00:00 ToAccount: Gergana I FromAccount: Todd Narrative: Misc Morale Amount: 2.6
+2019-09-04 16:09:24.8295 Debug - Bank: Date: 2013-04-11T00:00:00 ToAccount: Sarah T FromAccount: Gergana I Narrative: Lunch Amount: 3
+2019-09-04 16:09:24.8295 Debug - Bank: Date: 2013-04-15T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Coffee Amount: 5.49
+2019-09-04 16:09:24.8295 Debug - Bank: Date: 2013-04-18T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Lunch Amount: 9.07
+2019-09-04 16:09:24.8415 Debug - Bank: Date: 2013-04-21T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Sandcastle Help Amount: 5.32
+2019-09-04 16:09:24.8415 Debug - Bank: Date: 2013-04-24T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Fantasy Football Amount: 1.15
+2019-09-04 16:09:24.8415 Debug - Bank: Date: 2013-04-25T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Coffee Amount: 2.47
+2019-09-04 16:09:24.8415 Debug - Bank: Date: 2013-04-26T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Misc Morale Amount: 9.1
+2019-09-04 16:09:24.8415 Debug - Bank: Date: 2013-04-27T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.91
+2019-09-04 16:09:24.8594 Debug - Bank: Date: 2013-05-01T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Git-Fu Rendered Amount: 9.85
+2019-09-04 16:09:24.8594 Debug - Bank: Date: 2013-05-04T00:00:00 ToAccount: Dan W FromAccount: Laura B Narrative: Coffee Amount: 1.34
+2019-09-04 16:09:24.8594 Debug - Bank: Date: 2013-05-05T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Beers Amount: 0.51
+2019-09-04 16:09:24.8594 Debug - Bank: Date: 2013-05-06T00:00:00 ToAccount: Dan W FromAccount: Todd Narrative: Git-Fu Rendered Amount: 4.92
+2019-09-04 16:09:24.8744 Debug - Bank: Date: 2013-05-08T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 5.94
+2019-09-04 16:09:24.8744 Debug - Bank: Date: 2013-05-09T00:00:00 ToAccount: Tim L FromAccount: Gergana I Narrative: White Water Rafting Amount: 2.27
+2019-09-04 16:09:24.8744 Debug - Bank: Date: 2013-05-13T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Coffee Amount: 11.07
+2019-09-04 16:09:24.8744 Debug - Bank: Date: 2013-05-14T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.96
+2019-09-04 16:09:24.8893 Debug - Bank: Date: 2013-05-18T00:00:00 ToAccount: Sarah T FromAccount: Laura B Narrative: Lunch Amount: 11.94
+2019-09-04 16:09:24.8893 Debug - Bank: Date: 2013-05-22T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Pokemon Training Amount: 9.24
+2019-09-04 16:09:24.8893 Debug - Bank: Date: 2013-05-25T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Sandbox Help Amount: 2.85
+2019-09-04 16:09:24.8893 Debug - Bank: Date: 2013-05-29T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 1.51
+2019-09-04 16:09:24.9063 Debug - Bank: Date: 2013-06-02T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Golf Bets Amount: 11.83
+2019-09-04 16:09:24.9063 Debug - Bank: Date: 2013-06-03T00:00:00 ToAccount: Rob S FromAccount: Chris W Narrative: Lunch Amount: 2.16
+2019-09-04 16:09:24.9063 Debug - Bank: Date: 2013-06-05T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Golf Bets Amount: 1.96
+2019-09-04 16:09:24.9063 Debug - Bank: Date: 2013-06-06T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Pokemon Training Amount: 1.06
+2019-09-04 16:09:24.9202 Debug - Bank: Date: 2013-06-10T00:00:00 ToAccount: Gergana I FromAccount: Sarah T Narrative: Lego Assistance Amount: 10.81
+2019-09-04 16:09:24.9202 Debug - Bank: Date: 2013-06-12T00:00:00 ToAccount: Ben B FromAccount: Jon A Narrative: Sandcastle Help Amount: 6.75
+2019-09-04 16:09:24.9202 Debug - Bank: Date: 2013-06-13T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Poker Winnings Amount: 5.15
+2019-09-04 16:09:24.9202 Debug - Bank: Date: 2013-06-16T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Misc Morale Amount: 9.24
+2019-09-04 16:09:24.9352 Debug - Bank: Date: 2013-06-19T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Coffee Amount: 3.68
+2019-09-04 16:09:24.9352 Debug - Bank: Date: 2013-06-21T00:00:00 ToAccount: Todd FromAccount: Dan W Narrative: Lunch Amount: 5.43
+2019-09-04 16:09:24.9352 Debug - Bank: Date: 2013-06-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Stationary Items Amount: 0.98
+2019-09-04 16:09:24.9352 Debug - Bank: Date: 2013-06-23T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 6.12
+2019-09-04 16:09:24.9352 Debug - Bank: Date: 2013-06-26T00:00:00 ToAccount: Sarah T FromAccount: Rob S Narrative: Lunch Amount: 8.39
+2019-09-04 16:09:24.9532 Debug - Bank: Date: 2013-06-27T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Beers Amount: 10.41
+2019-09-04 16:09:24.9532 Debug - Bank: Date: 2013-06-30T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lunch Amount: 6.51
+2019-09-04 16:09:24.9532 Debug - Bank: Date: 2013-07-01T00:00:00 ToAccount: Jon A FromAccount: Tim L Narrative: Misc Morale Amount: 1.48
+2019-09-04 16:09:24.9532 Debug - Bank: Date: 2013-07-04T00:00:00 ToAccount: Chris W FromAccount: Tim L Narrative: Poker Winnings Amount: 5.63
+2019-09-04 16:09:24.9671 Debug - Bank: Date: 2013-07-05T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Lunch Amount: 6.73
+2019-09-04 16:09:24.9671 Debug - Bank: Date: 2013-07-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Lunch Amount: 6.69
+2019-09-04 16:09:24.9671 Debug - Bank: Date: 2013-07-10T00:00:00 ToAccount: Sarah T FromAccount: Dan W Narrative: Lunch Amount: 3.88
+2019-09-04 16:09:24.9671 Debug - Bank: Date: 2013-07-13T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Misc Morale Amount: 2.08
+2019-09-04 16:09:24.9671 Debug - Bank: Date: 2013-07-16T00:00:00 ToAccount: Gergana I FromAccount: Stephen S Narrative: Coffee Amount: 6.95
+2019-09-04 16:09:24.9871 Debug - Bank: Date: 2013-07-19T00:00:00 ToAccount: Stephen S FromAccount: Dan W Narrative: Arcade Social Amount: 3.21
+2019-09-04 16:09:24.9871 Debug - Bank: Date: 2013-07-23T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Services Rendered Amount: 11.17
+2019-09-04 16:09:24.9871 Debug - Bank: Date: 2013-07-27T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Coffee Amount: 4.29
+2019-09-04 16:09:24.9871 Debug - Bank: Date: 2013-07-30T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Beers Amount: 0.69
+2019-09-04 16:09:25.0010 Debug - Bank: Date: 2013-07-31T00:00:00 ToAccount: Sam N FromAccount: Dan W Narrative: Pokemon Training Amount: 1.2
+2019-09-04 16:09:25.0010 Debug - Bank: Date: 2013-08-01T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Lunch Amount: 11.18
+2019-09-04 16:09:25.0010 Debug - Bank: Date: 2013-08-05T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 11.34
+2019-09-04 16:09:25.0140 Debug - Bank: Date: 2013-08-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Poker Winnings Amount: 10.78
+2019-09-04 16:09:25.0140 Debug - Bank: Date: 2013-08-08T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Lunch Amount: 10.07
+2019-09-04 16:09:25.0140 Debug - Bank: Date: 2013-08-11T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Lunch Amount: 7.27
+2019-09-04 16:09:25.0140 Debug - Bank: Date: 2013-08-13T00:00:00 ToAccount: Chris W FromAccount: Gergana I Narrative: Sandcastle Help Amount: 9.96
+2019-09-04 16:09:25.0140 Debug - Bank: Date: 2013-08-16T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Misc Morale Amount: 10.91
+2019-09-04 16:09:25.0309 Debug - Bank: Date: 2013-08-19T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Coffee Amount: 7.51
+2019-09-04 16:09:25.0309 Debug - Bank: Date: 2013-08-22T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Misc Morale Amount: 7.05
+2019-09-04 16:09:25.0309 Debug - Bank: Date: 2013-08-23T00:00:00 ToAccount: Sam N FromAccount: Todd Narrative: Beers Amount: 0.6
+2019-09-04 16:09:25.0309 Debug - Bank: Date: 2013-08-26T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 3.85
+2019-09-04 16:09:25.0449 Debug - Bank: Date: 2013-08-27T00:00:00 ToAccount: Gergana I FromAccount: Sam N Narrative: Fantasy Football Amount: 5.45
+2019-09-04 16:09:25.0449 Debug - Bank: Date: 2013-08-28T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Jenkins Fees Amount: 11.13
+2019-09-04 16:09:25.0449 Debug - Bank: Date: 2013-08-31T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Pokemon Training Amount: 5.54
+2019-09-04 16:09:25.0449 Debug - Bank: Date: 2013-09-03T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 9.48
+2019-09-04 16:09:25.0449 Debug - Bank: Date: 2013-09-05T00:00:00 ToAccount: Tim L FromAccount: Dan W Narrative: Lunch Amount: 10.58
+2019-09-04 16:09:25.0609 Debug - Bank: Date: 2013-09-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Lunch Amount: 3.32
+2019-09-04 16:09:25.0609 Debug - Bank: Date: 2013-09-10T00:00:00 ToAccount: Ben B FromAccount: Tim L Narrative: Misc Morale Amount: 8.68
+2019-09-04 16:09:25.0609 Debug - Bank: Date: 2013-09-12T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lego Assistance Amount: 2.53
+2019-09-04 16:09:25.0609 Debug - Bank: Date: 2013-09-13T00:00:00 ToAccount: Laura B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.96
+2019-09-04 16:09:25.0758 Debug - Bank: Date: 2013-09-16T00:00:00 ToAccount: Rob S FromAccount: Sam N Narrative: Beers Amount: 2.81
+2019-09-04 16:09:25.0758 Debug - Bank: Date: 2013-09-19T00:00:00 ToAccount: Gergana I FromAccount: Ben B Narrative: Beers Amount: 5.52
+2019-09-04 16:09:25.0758 Debug - Bank: Date: 2013-09-22T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Sandbox Help Amount: 9.28
+2019-09-04 16:09:25.0758 Debug - Bank: Date: 2013-09-23T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Coffee Amount: 5.13
+2019-09-04 16:09:25.0758 Debug - Bank: Date: 2013-09-27T00:00:00 ToAccount: Sarah T FromAccount: Chris W Narrative: Stationary Items Amount: 7.05
+2019-09-04 16:09:25.0928 Debug - Bank: Date: 2013-10-01T00:00:00 ToAccount: Tim L FromAccount: Todd Narrative: Coffee Amount: 10.13
+2019-09-04 16:09:25.0928 Debug - Bank: Date: 2013-10-04T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 5.96
+2019-09-04 16:09:25.0928 Debug - Bank: Date: 2013-10-08T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Lunch Amount: 5.33
+2019-09-04 16:09:25.0928 Debug - Bank: Date: 2013-10-11T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 10.62
+2019-09-04 16:09:25.0928 Debug - Bank: Date: 2013-10-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Jenkins Fees Amount: 7.78
+2019-09-04 16:09:25.1097 Debug - Bank: Date: 2013-10-16T00:00:00 ToAccount: Rob S FromAccount: Laura B Narrative: Arcade Social Amount: 5.71
+2019-09-04 16:09:25.1097 Debug - Bank: Date: 2013-10-17T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Arcade Social Amount: 7.71
+2019-09-04 16:09:25.1097 Debug - Bank: Date: 2013-10-20T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 10.6
+2019-09-04 16:09:25.1097 Debug - Bank: Date: 2013-10-23T00:00:00 ToAccount: Todd FromAccount: Chris W Narrative: Lego Assistance Amount: 3.42
+2019-09-04 16:09:25.1237 Debug - Bank: Date: 2013-10-27T00:00:00 ToAccount: Dan W FromAccount: Sam N Narrative: Misc Morale Amount: 6.89
+2019-09-04 16:09:25.1237 Debug - Bank: Date: 2013-10-29T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Misc Morale Amount: 9.99
+2019-09-04 16:09:25.1237 Debug - Bank: Date: 2013-11-01T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Lunch Amount: 7.01
+2019-09-04 16:09:25.1237 Debug - Bank: Date: 2013-11-05T00:00:00 ToAccount: Rob S FromAccount: Stephen S Narrative: Spline Reticulation Amount: 8.3
+2019-09-04 16:09:25.1237 Debug - Bank: Date: 2013-11-07T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Lunch Amount: 10.09
+2019-09-04 16:09:25.1397 Debug - Bank: Date: 2013-11-09T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Stationary Items Amount: 11
+2019-09-04 16:09:25.1397 Debug - Bank: Date: 2013-11-12T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 1.25
+2019-09-04 16:09:25.1397 Debug - Bank: Date: 2013-11-15T00:00:00 ToAccount: Tim L FromAccount: Jon A Narrative: Sandbox Help Amount: 9.13
+2019-09-04 16:09:25.1397 Debug - Bank: Date: 2013-11-18T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Services Rendered Amount: 9.4
+2019-09-04 16:09:25.1397 Debug - Bank: Date: 2013-11-21T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Misc Morale Amount: 2.53
+2019-09-04 16:09:25.1546 Debug - Bank: Date: 2013-11-24T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Rails Consultancy Amount: 7.59
+2019-09-04 16:09:25.1546 Debug - Bank: Date: 2013-11-28T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Golf Bets Amount: 2.15
+2019-09-04 16:09:25.1546 Debug - Bank: Date: 2013-11-29T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Pokemon Training Amount: 4.01
+2019-09-04 16:09:25.1546 Debug - Bank: Date: 2013-12-01T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 6.35
+2019-09-04 16:09:25.1546 Debug - Bank: Date: 2013-12-02T00:00:00 ToAccount: Todd FromAccount: Jon A Narrative: Misc Morale Amount: 10.19
+2019-09-04 16:09:25.1716 Debug - Bank: Date: 2013-12-05T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Coffee Amount: 9
+2019-09-04 16:09:25.1716 Debug - Bank: Date: 2013-12-09T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Rails Consultancy Amount: 9.39
+2019-09-04 16:09:25.1716 Debug - Bank: Date: 2013-12-12T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 11.44
+2019-09-04 16:09:25.1716 Debug - Bank: Date: 2013-12-13T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Misc Morale Amount: 9.19
+2019-09-04 16:09:25.1716 Debug - Bank: Date: 2013-12-17T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:09:25.1875 Debug - Bank: Date: 2013-12-19T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:09:25.1875 Debug - Bank: Date: 2013-12-22T00:00:00 ToAccount: Sam N FromAccount: Gergana I Narrative: Lunch Amount: 1.32
+2019-09-04 16:09:25.1875 Debug - Bank: Date: 2013-12-24T00:00:00 ToAccount: Rob S FromAccount: Ben B Narrative: Snooker Night Amount: 10.14
+2019-09-04 16:09:25.1875 Debug - Bank: Date: 2013-12-27T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Spline Reticulation Amount: 4.34
+2019-09-04 16:09:25.1875 Debug - Bank: Date: 2013-12-28T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Beers Amount: 5.99
+2019-09-04 16:09:25.2025 Debug - Bank: Date: 2013-12-30T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 2.54
+2019-09-04 16:10:14.2028 Debug - SupportBank.Program: 145
+2019-09-04 16:10:14.2268 Debug - Bank: Date: 2013-01-01T00:00:00 ToAccount: Gergana I FromAccount: Jon A Narrative: Sandbox Help Amount: 2.14
+2019-09-04 16:10:14.2268 Debug - Bank: Date: 2013-01-04T00:00:00 ToAccount: Dan W FromAccount: Chris W Narrative: Coffee Amount: 10.53
+2019-09-04 16:10:14.2337 Debug - Bank: Date: 2013-01-05T00:00:00 ToAccount: Tim L FromAccount: Stephen S Narrative: Sandcastle Help Amount: 10.57
+2019-09-04 16:10:14.2337 Debug - Bank: Date: 2013-01-09T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Coffee Amount: 8.19
+2019-09-04 16:10:14.2337 Debug - Bank: Date: 2013-01-13T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Coffee Amount: 1.01
+2019-09-04 16:10:14.2337 Debug - Bank: Date: 2013-01-15T00:00:00 ToAccount: Laura B FromAccount: Todd Narrative: Golf Bets Amount: 2.71
+2019-09-04 16:10:14.2507 Debug - Bank: Date: 2013-01-18T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 7.17
+2019-09-04 16:10:14.2507 Debug - Bank: Date: 2013-01-22T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Sandcastle Help Amount: 11.12
+2019-09-04 16:10:14.2507 Debug - Bank: Date: 2013-01-25T00:00:00 ToAccount: Jon A FromAccount: Ben B Narrative: Coffee Amount: 4.86
+2019-09-04 16:10:14.2507 Debug - Bank: Date: 2013-01-28T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.92
+2019-09-04 16:10:14.2667 Debug - Bank: Date: 2013-01-30T00:00:00 ToAccount: Todd FromAccount: Sarah T Narrative: Jenkins Fees Amount: 11.95
+2019-09-04 16:10:14.2667 Debug - Bank: Date: 2013-01-31T00:00:00 ToAccount: Chris W FromAccount: Sarah T Narrative: Poker Winnings Amount: 7.55
+2019-09-04 16:10:14.2667 Debug - Bank: Date: 2013-02-04T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Arcade Social Amount: 5.52
+2019-09-04 16:10:14.2667 Debug - Bank: Date: 2013-02-06T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Snooker Night Amount: 8.07
+2019-09-04 16:10:14.2809 Debug - Bank: Date: 2013-02-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Beers Amount: 7.63
+2019-09-04 16:10:14.2809 Debug - Bank: Date: 2013-02-10T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Snooker Night Amount: 10.4
+2019-09-04 16:10:14.2809 Debug - Bank: Date: 2013-02-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Misc Morale Amount: 5.76
+2019-09-04 16:10:14.2978 Debug - Bank: Date: 2013-02-15T00:00:00 ToAccount: Chris W FromAccount: Sam N Narrative: Lunch Amount: 1.54
+2019-09-04 16:10:14.2978 Debug - Bank: Date: 2013-02-18T00:00:00 ToAccount: Sam N FromAccount: Sarah T Narrative: Coffee Amount: 6.98
+2019-09-04 16:10:14.2978 Debug - Bank: Date: 2013-02-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Lunch Amount: 8.77
+2019-09-04 16:10:14.3128 Debug - Bank: Date: 2013-02-26T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Audit and Other Financial Services Amount: 5.94
+2019-09-04 16:10:14.3128 Debug - Bank: Date: 2013-02-27T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Rails Consultancy Amount: 10.58
+2019-09-04 16:10:14.3258 Debug - Bank: Date: 2013-03-02T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Audit and Other Financial Services Amount: 1.73
+2019-09-04 16:10:14.3258 Debug - Bank: Date: 2013-03-06T00:00:00 ToAccount: Sam N FromAccount: Laura B Narrative: Stationary Items Amount: 7.26
+2019-09-04 16:10:14.3258 Debug - Bank: Date: 2013-03-08T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Pokemon Training Amount: 6.2
+2019-09-04 16:10:14.3258 Debug - Bank: Date: 2013-03-12T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Automated Testing Services Amount: 0.9
+2019-09-04 16:10:14.3417 Debug - Bank: Date: 2013-03-14T00:00:00 ToAccount: Chris W FromAccount: Todd Narrative: Rails Consultancy Amount: 8.97
+2019-09-04 16:10:14.3417 Debug - Bank: Date: 2013-03-17T00:00:00 ToAccount: Chris W FromAccount: Dan W Narrative: Audit and Other Financial Services Amount: 3.34
+2019-09-04 16:10:14.3417 Debug - Bank: Date: 2013-03-20T00:00:00 ToAccount: Rob S FromAccount: Gergana I Narrative: Stationary Items Amount: 2.85
+2019-09-04 16:10:14.3417 Debug - Bank: Date: 2013-03-22T00:00:00 ToAccount: Laura B FromAccount: Chris W Narrative: Git-Fu Rendered Amount: 4.15
+2019-09-04 16:10:14.3417 Debug - Bank: Date: 2013-03-24T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Coffee Amount: 2.39
+2019-09-04 16:10:14.3607 Debug - Bank: Date: 2013-03-27T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Jenkins Fees Amount: 7.82
+2019-09-04 16:10:14.3607 Debug - Bank: Date: 2013-03-28T00:00:00 ToAccount: Stephen S FromAccount: Ben B Narrative: Sandbox Help Amount: 6.36
+2019-09-04 16:10:14.3607 Debug - Bank: Date: 2013-04-01T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Coffee Amount: 4.77
+2019-09-04 16:10:14.3607 Debug - Bank: Date: 2013-04-03T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Lunch Amount: 2.64
+2019-09-04 16:10:14.3766 Debug - Bank: Date: 2013-04-05T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Coffee Amount: 3.4
+2019-09-04 16:10:14.3766 Debug - Bank: Date: 2013-04-08T00:00:00 ToAccount: Todd FromAccount: Tim L Narrative: Jenkins Fees Amount: 4.27
+2019-09-04 16:10:14.3766 Debug - Bank: Date: 2013-04-09T00:00:00 ToAccount: Gergana I FromAccount: Todd Narrative: Misc Morale Amount: 2.6
+2019-09-04 16:10:14.3766 Debug - Bank: Date: 2013-04-11T00:00:00 ToAccount: Sarah T FromAccount: Gergana I Narrative: Lunch Amount: 3
+2019-09-04 16:10:14.3906 Debug - Bank: Date: 2013-04-15T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Coffee Amount: 5.49
+2019-09-04 16:10:14.3906 Debug - Bank: Date: 2013-04-18T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Lunch Amount: 9.07
+2019-09-04 16:10:14.3906 Debug - Bank: Date: 2013-04-21T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Sandcastle Help Amount: 5.32
+2019-09-04 16:10:14.4066 Debug - Bank: Date: 2013-04-24T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Fantasy Football Amount: 1.15
+2019-09-04 16:10:14.4066 Debug - Bank: Date: 2013-04-25T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Coffee Amount: 2.47
+2019-09-04 16:10:14.4066 Debug - Bank: Date: 2013-04-26T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Misc Morale Amount: 9.1
+2019-09-04 16:10:14.4205 Debug - Bank: Date: 2013-04-27T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.91
+2019-09-04 16:10:14.4205 Debug - Bank: Date: 2013-05-01T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Git-Fu Rendered Amount: 9.85
+2019-09-04 16:10:14.4205 Debug - Bank: Date: 2013-05-04T00:00:00 ToAccount: Dan W FromAccount: Laura B Narrative: Coffee Amount: 1.34
+2019-09-04 16:10:14.4205 Debug - Bank: Date: 2013-05-05T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Beers Amount: 0.51
+2019-09-04 16:10:14.4365 Debug - Bank: Date: 2013-05-06T00:00:00 ToAccount: Dan W FromAccount: Todd Narrative: Git-Fu Rendered Amount: 4.92
+2019-09-04 16:10:14.4365 Debug - Bank: Date: 2013-05-08T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 5.94
+2019-09-04 16:10:14.4365 Debug - Bank: Date: 2013-05-09T00:00:00 ToAccount: Tim L FromAccount: Gergana I Narrative: White Water Rafting Amount: 2.27
+2019-09-04 16:10:14.4365 Debug - Bank: Date: 2013-05-13T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Coffee Amount: 11.07
+2019-09-04 16:10:14.4514 Debug - Bank: Date: 2013-05-14T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.96
+2019-09-04 16:10:14.4514 Debug - Bank: Date: 2013-05-18T00:00:00 ToAccount: Sarah T FromAccount: Laura B Narrative: Lunch Amount: 11.94
+2019-09-04 16:10:14.4514 Debug - Bank: Date: 2013-05-22T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Pokemon Training Amount: 9.24
+2019-09-04 16:10:14.4514 Debug - Bank: Date: 2013-05-25T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Sandbox Help Amount: 2.85
+2019-09-04 16:10:14.4674 Debug - Bank: Date: 2013-05-29T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 1.51
+2019-09-04 16:10:14.4674 Debug - Bank: Date: 2013-06-02T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Golf Bets Amount: 11.83
+2019-09-04 16:10:14.4674 Debug - Bank: Date: 2013-06-03T00:00:00 ToAccount: Rob S FromAccount: Chris W Narrative: Lunch Amount: 2.16
+2019-09-04 16:10:14.4674 Debug - Bank: Date: 2013-06-05T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Golf Bets Amount: 1.96
+2019-09-04 16:10:14.4833 Debug - Bank: Date: 2013-06-06T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Pokemon Training Amount: 1.06
+2019-09-04 16:10:14.4833 Debug - Bank: Date: 2013-06-10T00:00:00 ToAccount: Gergana I FromAccount: Sarah T Narrative: Lego Assistance Amount: 10.81
+2019-09-04 16:10:14.4833 Debug - Bank: Date: 2013-06-12T00:00:00 ToAccount: Ben B FromAccount: Jon A Narrative: Sandcastle Help Amount: 6.75
+2019-09-04 16:10:14.4833 Debug - Bank: Date: 2013-06-13T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Poker Winnings Amount: 5.15
+2019-09-04 16:10:14.4993 Debug - Bank: Date: 2013-06-16T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Misc Morale Amount: 9.24
+2019-09-04 16:10:14.4993 Debug - Bank: Date: 2013-06-19T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Coffee Amount: 3.68
+2019-09-04 16:10:14.4993 Debug - Bank: Date: 2013-06-21T00:00:00 ToAccount: Todd FromAccount: Dan W Narrative: Lunch Amount: 5.43
+2019-09-04 16:10:14.4993 Debug - Bank: Date: 2013-06-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Stationary Items Amount: 0.98
+2019-09-04 16:10:14.5143 Debug - Bank: Date: 2013-06-23T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 6.12
+2019-09-04 16:10:14.5143 Debug - Bank: Date: 2013-06-26T00:00:00 ToAccount: Sarah T FromAccount: Rob S Narrative: Lunch Amount: 8.39
+2019-09-04 16:10:14.5143 Debug - Bank: Date: 2013-06-27T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Beers Amount: 10.41
+2019-09-04 16:10:14.5143 Debug - Bank: Date: 2013-06-30T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lunch Amount: 6.51
+2019-09-04 16:10:14.5304 Debug - Bank: Date: 2013-07-01T00:00:00 ToAccount: Jon A FromAccount: Tim L Narrative: Misc Morale Amount: 1.48
+2019-09-04 16:10:14.5304 Debug - Bank: Date: 2013-07-04T00:00:00 ToAccount: Chris W FromAccount: Tim L Narrative: Poker Winnings Amount: 5.63
+2019-09-04 16:10:14.5304 Debug - Bank: Date: 2013-07-05T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Lunch Amount: 6.73
+2019-09-04 16:10:14.5304 Debug - Bank: Date: 2013-07-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Lunch Amount: 6.69
+2019-09-04 16:10:14.5462 Debug - Bank: Date: 2013-07-10T00:00:00 ToAccount: Sarah T FromAccount: Dan W Narrative: Lunch Amount: 3.88
+2019-09-04 16:10:14.5462 Debug - Bank: Date: 2013-07-13T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Misc Morale Amount: 2.08
+2019-09-04 16:10:14.5462 Debug - Bank: Date: 2013-07-16T00:00:00 ToAccount: Gergana I FromAccount: Stephen S Narrative: Coffee Amount: 6.95
+2019-09-04 16:10:14.5462 Debug - Bank: Date: 2013-07-19T00:00:00 ToAccount: Stephen S FromAccount: Dan W Narrative: Arcade Social Amount: 3.21
+2019-09-04 16:10:14.5462 Debug - Bank: Date: 2013-07-23T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Services Rendered Amount: 11.17
+2019-09-04 16:10:14.5631 Debug - Bank: Date: 2013-07-27T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Coffee Amount: 4.29
+2019-09-04 16:10:14.5631 Debug - Bank: Date: 2013-07-30T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Beers Amount: 0.69
+2019-09-04 16:10:14.5631 Debug - Bank: Date: 2013-07-31T00:00:00 ToAccount: Sam N FromAccount: Dan W Narrative: Pokemon Training Amount: 1.2
+2019-09-04 16:10:14.5631 Debug - Bank: Date: 2013-08-01T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Lunch Amount: 11.18
+2019-09-04 16:10:14.5781 Debug - Bank: Date: 2013-08-05T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 11.34
+2019-09-04 16:10:14.5781 Debug - Bank: Date: 2013-08-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Poker Winnings Amount: 10.78
+2019-09-04 16:10:14.5781 Debug - Bank: Date: 2013-08-08T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Lunch Amount: 10.07
+2019-09-04 16:10:14.5781 Debug - Bank: Date: 2013-08-11T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Lunch Amount: 7.27
+2019-09-04 16:10:14.5931 Debug - Bank: Date: 2013-08-13T00:00:00 ToAccount: Chris W FromAccount: Gergana I Narrative: Sandcastle Help Amount: 9.96
+2019-09-04 16:10:14.5931 Debug - Bank: Date: 2013-08-16T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Misc Morale Amount: 10.91
+2019-09-04 16:10:14.5931 Debug - Bank: Date: 2013-08-19T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Coffee Amount: 7.51
+2019-09-04 16:10:14.5931 Debug - Bank: Date: 2013-08-22T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Misc Morale Amount: 7.05
+2019-09-04 16:10:14.6070 Debug - Bank: Date: 2013-08-23T00:00:00 ToAccount: Sam N FromAccount: Todd Narrative: Beers Amount: 0.6
+2019-09-04 16:10:14.6070 Debug - Bank: Date: 2013-08-26T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 3.85
+2019-09-04 16:10:14.6070 Debug - Bank: Date: 2013-08-27T00:00:00 ToAccount: Gergana I FromAccount: Sam N Narrative: Fantasy Football Amount: 5.45
+2019-09-04 16:10:14.6070 Debug - Bank: Date: 2013-08-28T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Jenkins Fees Amount: 11.13
+2019-09-04 16:10:14.6240 Debug - Bank: Date: 2013-08-31T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Pokemon Training Amount: 5.54
+2019-09-04 16:10:14.6240 Debug - Bank: Date: 2013-09-03T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 9.48
+2019-09-04 16:10:14.6240 Debug - Bank: Date: 2013-09-05T00:00:00 ToAccount: Tim L FromAccount: Dan W Narrative: Lunch Amount: 10.58
+2019-09-04 16:10:14.6240 Debug - Bank: Date: 2013-09-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Lunch Amount: 3.32
+2019-09-04 16:10:14.6240 Debug - Bank: Date: 2013-09-10T00:00:00 ToAccount: Ben B FromAccount: Tim L Narrative: Misc Morale Amount: 8.68
+2019-09-04 16:10:14.6399 Debug - Bank: Date: 2013-09-12T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lego Assistance Amount: 2.53
+2019-09-04 16:10:14.6399 Debug - Bank: Date: 2013-09-13T00:00:00 ToAccount: Laura B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.96
+2019-09-04 16:10:14.6399 Debug - Bank: Date: 2013-09-16T00:00:00 ToAccount: Rob S FromAccount: Sam N Narrative: Beers Amount: 2.81
+2019-09-04 16:10:14.6399 Debug - Bank: Date: 2013-09-19T00:00:00 ToAccount: Gergana I FromAccount: Ben B Narrative: Beers Amount: 5.52
+2019-09-04 16:10:14.6559 Debug - Bank: Date: 2013-09-22T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Sandbox Help Amount: 9.28
+2019-09-04 16:10:14.6559 Debug - Bank: Date: 2013-09-23T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Coffee Amount: 5.13
+2019-09-04 16:10:14.6559 Debug - Bank: Date: 2013-09-27T00:00:00 ToAccount: Sarah T FromAccount: Chris W Narrative: Stationary Items Amount: 7.05
+2019-09-04 16:10:14.6559 Debug - Bank: Date: 2013-10-01T00:00:00 ToAccount: Tim L FromAccount: Todd Narrative: Coffee Amount: 10.13
+2019-09-04 16:10:14.6708 Debug - Bank: Date: 2013-10-04T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 5.96
+2019-09-04 16:10:14.6708 Debug - Bank: Date: 2013-10-08T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Lunch Amount: 5.33
+2019-09-04 16:10:14.6708 Debug - Bank: Date: 2013-10-11T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 10.62
+2019-09-04 16:10:14.6708 Debug - Bank: Date: 2013-10-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Jenkins Fees Amount: 7.78
+2019-09-04 16:10:14.6858 Debug - Bank: Date: 2013-10-16T00:00:00 ToAccount: Rob S FromAccount: Laura B Narrative: Arcade Social Amount: 5.71
+2019-09-04 16:10:14.6858 Debug - Bank: Date: 2013-10-17T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Arcade Social Amount: 7.71
+2019-09-04 16:10:14.6858 Debug - Bank: Date: 2013-10-20T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 10.6
+2019-09-04 16:10:14.6858 Debug - Bank: Date: 2013-10-23T00:00:00 ToAccount: Todd FromAccount: Chris W Narrative: Lego Assistance Amount: 3.42
+2019-09-04 16:10:14.7028 Debug - Bank: Date: 2013-10-27T00:00:00 ToAccount: Dan W FromAccount: Sam N Narrative: Misc Morale Amount: 6.89
+2019-09-04 16:10:14.7028 Debug - Bank: Date: 2013-10-29T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Misc Morale Amount: 9.99
+2019-09-04 16:10:14.7028 Debug - Bank: Date: 2013-11-01T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Lunch Amount: 7.01
+2019-09-04 16:10:14.7028 Debug - Bank: Date: 2013-11-05T00:00:00 ToAccount: Rob S FromAccount: Stephen S Narrative: Spline Reticulation Amount: 8.3
+2019-09-04 16:10:14.7167 Debug - Bank: Date: 2013-11-07T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Lunch Amount: 10.09
+2019-09-04 16:10:14.7167 Debug - Bank: Date: 2013-11-09T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Stationary Items Amount: 11
+2019-09-04 16:10:14.7167 Debug - Bank: Date: 2013-11-12T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 1.25
+2019-09-04 16:10:14.7167 Debug - Bank: Date: 2013-11-15T00:00:00 ToAccount: Tim L FromAccount: Jon A Narrative: Sandbox Help Amount: 9.13
+2019-09-04 16:10:14.7167 Debug - Bank: Date: 2013-11-18T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Services Rendered Amount: 9.4
+2019-09-04 16:10:14.7357 Debug - Bank: Date: 2013-11-21T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Misc Morale Amount: 2.53
+2019-09-04 16:10:14.7357 Debug - Bank: Date: 2013-11-24T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Rails Consultancy Amount: 7.59
+2019-09-04 16:10:14.7357 Debug - Bank: Date: 2013-11-28T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Golf Bets Amount: 2.15
+2019-09-04 16:10:14.7476 Debug - Bank: Date: 2013-11-29T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Pokemon Training Amount: 4.01
+2019-09-04 16:10:14.7476 Debug - Bank: Date: 2013-12-01T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 6.35
+2019-09-04 16:10:14.7476 Debug - Bank: Date: 2013-12-02T00:00:00 ToAccount: Todd FromAccount: Jon A Narrative: Misc Morale Amount: 10.19
+2019-09-04 16:10:14.7476 Debug - Bank: Date: 2013-12-05T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Coffee Amount: 9
+2019-09-04 16:10:14.7476 Debug - Bank: Date: 2013-12-09T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Rails Consultancy Amount: 9.39
+2019-09-04 16:10:14.7646 Debug - Bank: Date: 2013-12-12T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 11.44
+2019-09-04 16:10:14.7646 Debug - Bank: Date: 2013-12-13T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Misc Morale Amount: 9.19
+2019-09-04 16:10:14.7646 Debug - Bank: Date: 2013-12-17T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:10:14.7646 Debug - Bank: Date: 2013-12-19T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:10:14.7646 Debug - Bank: Date: 2013-12-22T00:00:00 ToAccount: Sam N FromAccount: Gergana I Narrative: Lunch Amount: 1.32
+2019-09-04 16:10:14.7815 Debug - Bank: Date: 2013-12-24T00:00:00 ToAccount: Rob S FromAccount: Ben B Narrative: Snooker Night Amount: 10.14
+2019-09-04 16:10:14.7815 Debug - Bank: Date: 2013-12-27T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Spline Reticulation Amount: 4.34
+2019-09-04 16:10:14.7815 Debug - Bank: Date: 2013-12-28T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Beers Amount: 5.99
+2019-09-04 16:10:14.7815 Debug - Bank: Date: 2013-12-30T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 2.54
+2019-09-04 16:10:41.1411 Debug - SupportBank.Program: 145
+2019-09-04 16:10:41.1640 Debug - Bank: Date: 2013-01-01T00:00:00 ToAccount: Gergana I FromAccount: Jon A Narrative: Sandbox Help Amount: 2.14
+2019-09-04 16:10:41.1640 Debug - Bank: Date: 2013-01-04T00:00:00 ToAccount: Dan W FromAccount: Chris W Narrative: Coffee Amount: 10.53
+2019-09-04 16:10:41.1701 Debug - Bank: Date: 2013-01-05T00:00:00 ToAccount: Tim L FromAccount: Stephen S Narrative: Sandcastle Help Amount: 10.57
+2019-09-04 16:10:41.1701 Debug - Bank: Date: 2013-01-09T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Coffee Amount: 8.19
+2019-09-04 16:10:41.1701 Debug - Bank: Date: 2013-01-13T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Coffee Amount: 1.01
+2019-09-04 16:10:41.1701 Debug - Bank: Date: 2013-01-15T00:00:00 ToAccount: Laura B FromAccount: Todd Narrative: Golf Bets Amount: 2.71
+2019-09-04 16:10:41.1701 Debug - Bank: Date: 2013-01-18T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 7.17
+2019-09-04 16:10:41.1860 Debug - Bank: Date: 2013-01-22T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Sandcastle Help Amount: 11.12
+2019-09-04 16:10:41.1860 Debug - Bank: Date: 2013-01-25T00:00:00 ToAccount: Jon A FromAccount: Ben B Narrative: Coffee Amount: 4.86
+2019-09-04 16:10:41.1860 Debug - Bank: Date: 2013-01-28T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.92
+2019-09-04 16:10:41.1860 Debug - Bank: Date: 2013-01-30T00:00:00 ToAccount: Todd FromAccount: Sarah T Narrative: Jenkins Fees Amount: 11.95
+2019-09-04 16:10:41.2019 Debug - Bank: Date: 2013-01-31T00:00:00 ToAccount: Chris W FromAccount: Sarah T Narrative: Poker Winnings Amount: 7.55
+2019-09-04 16:10:41.2019 Debug - Bank: Date: 2013-02-04T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Arcade Social Amount: 5.52
+2019-09-04 16:10:41.2019 Debug - Bank: Date: 2013-02-06T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Snooker Night Amount: 8.07
+2019-09-04 16:10:41.2019 Debug - Bank: Date: 2013-02-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Beers Amount: 7.63
+2019-09-04 16:10:41.2019 Debug - Bank: Date: 2013-02-10T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Snooker Night Amount: 10.4
+2019-09-04 16:10:41.2169 Debug - Bank: Date: 2013-02-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Misc Morale Amount: 5.76
+2019-09-04 16:10:41.2169 Debug - Bank: Date: 2013-02-15T00:00:00 ToAccount: Chris W FromAccount: Sam N Narrative: Lunch Amount: 1.54
+2019-09-04 16:10:41.2169 Debug - Bank: Date: 2013-02-18T00:00:00 ToAccount: Sam N FromAccount: Sarah T Narrative: Coffee Amount: 6.98
+2019-09-04 16:10:41.2169 Debug - Bank: Date: 2013-02-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Lunch Amount: 8.77
+2019-09-04 16:10:41.2169 Debug - Bank: Date: 2013-02-26T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Audit and Other Financial Services Amount: 5.94
+2019-09-04 16:10:41.2339 Debug - Bank: Date: 2013-02-27T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Rails Consultancy Amount: 10.58
+2019-09-04 16:10:41.2339 Debug - Bank: Date: 2013-03-02T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Audit and Other Financial Services Amount: 1.73
+2019-09-04 16:10:41.2339 Debug - Bank: Date: 2013-03-06T00:00:00 ToAccount: Sam N FromAccount: Laura B Narrative: Stationary Items Amount: 7.26
+2019-09-04 16:10:41.2339 Debug - Bank: Date: 2013-03-08T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Pokemon Training Amount: 6.2
+2019-09-04 16:10:41.2488 Debug - Bank: Date: 2013-03-12T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Automated Testing Services Amount: 0.9
+2019-09-04 16:10:41.2488 Debug - Bank: Date: 2013-03-14T00:00:00 ToAccount: Chris W FromAccount: Todd Narrative: Rails Consultancy Amount: 8.97
+2019-09-04 16:10:41.2488 Debug - Bank: Date: 2013-03-17T00:00:00 ToAccount: Chris W FromAccount: Dan W Narrative: Audit and Other Financial Services Amount: 3.34
+2019-09-04 16:10:41.2658 Debug - Bank: Date: 2013-03-20T00:00:00 ToAccount: Rob S FromAccount: Gergana I Narrative: Stationary Items Amount: 2.85
+2019-09-04 16:10:41.2658 Debug - Bank: Date: 2013-03-22T00:00:00 ToAccount: Laura B FromAccount: Chris W Narrative: Git-Fu Rendered Amount: 4.15
+2019-09-04 16:10:41.2658 Debug - Bank: Date: 2013-03-24T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Coffee Amount: 2.39
+2019-09-04 16:10:41.2658 Debug - Bank: Date: 2013-03-27T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Jenkins Fees Amount: 7.82
+2019-09-04 16:10:41.2808 Debug - Bank: Date: 2013-03-28T00:00:00 ToAccount: Stephen S FromAccount: Ben B Narrative: Sandbox Help Amount: 6.36
+2019-09-04 16:10:41.2808 Debug - Bank: Date: 2013-04-01T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Coffee Amount: 4.77
+2019-09-04 16:10:41.2808 Debug - Bank: Date: 2013-04-03T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Lunch Amount: 2.64
+2019-09-04 16:10:41.2952 Debug - Bank: Date: 2013-04-05T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Coffee Amount: 3.4
+2019-09-04 16:10:41.2952 Debug - Bank: Date: 2013-04-08T00:00:00 ToAccount: Todd FromAccount: Tim L Narrative: Jenkins Fees Amount: 4.27
+2019-09-04 16:10:41.2952 Debug - Bank: Date: 2013-04-09T00:00:00 ToAccount: Gergana I FromAccount: Todd Narrative: Misc Morale Amount: 2.6
+2019-09-04 16:10:41.2952 Debug - Bank: Date: 2013-04-11T00:00:00 ToAccount: Sarah T FromAccount: Gergana I Narrative: Lunch Amount: 3
+2019-09-04 16:10:41.3112 Debug - Bank: Date: 2013-04-15T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Coffee Amount: 5.49
+2019-09-04 16:10:41.3112 Debug - Bank: Date: 2013-04-18T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Lunch Amount: 9.07
+2019-09-04 16:10:41.3112 Debug - Bank: Date: 2013-04-21T00:00:00 ToAccount: Sarah T FromAccount: Todd Narrative: Sandcastle Help Amount: 5.32
+2019-09-04 16:10:41.3112 Debug - Bank: Date: 2013-04-24T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Fantasy Football Amount: 1.15
+2019-09-04 16:10:41.3261 Debug - Bank: Date: 2013-04-25T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Coffee Amount: 2.47
+2019-09-04 16:10:41.3261 Debug - Bank: Date: 2013-04-26T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Misc Morale Amount: 9.1
+2019-09-04 16:10:41.3261 Debug - Bank: Date: 2013-04-27T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.91
+2019-09-04 16:10:41.3261 Debug - Bank: Date: 2013-05-01T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Git-Fu Rendered Amount: 9.85
+2019-09-04 16:10:41.3261 Debug - Bank: Date: 2013-05-04T00:00:00 ToAccount: Dan W FromAccount: Laura B Narrative: Coffee Amount: 1.34
+2019-09-04 16:10:41.3438 Debug - Bank: Date: 2013-05-05T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Beers Amount: 0.51
+2019-09-04 16:10:41.3438 Debug - Bank: Date: 2013-05-06T00:00:00 ToAccount: Dan W FromAccount: Todd Narrative: Git-Fu Rendered Amount: 4.92
+2019-09-04 16:10:41.3438 Debug - Bank: Date: 2013-05-08T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 5.94
+2019-09-04 16:10:41.3438 Debug - Bank: Date: 2013-05-09T00:00:00 ToAccount: Tim L FromAccount: Gergana I Narrative: White Water Rafting Amount: 2.27
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-13T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Coffee Amount: 11.07
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-14T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Rails Consultancy Amount: 9.96
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-18T00:00:00 ToAccount: Sarah T FromAccount: Laura B Narrative: Lunch Amount: 11.94
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-22T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Pokemon Training Amount: 9.24
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-25T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Sandbox Help Amount: 2.85
+2019-09-04 16:10:41.3571 Debug - Bank: Date: 2013-05-29T00:00:00 ToAccount: Ben B FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 1.51
+2019-09-04 16:10:41.3748 Debug - Bank: Date: 2013-06-02T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Golf Bets Amount: 11.83
+2019-09-04 16:10:41.3748 Debug - Bank: Date: 2013-06-03T00:00:00 ToAccount: Rob S FromAccount: Chris W Narrative: Lunch Amount: 2.16
+2019-09-04 16:10:41.3748 Debug - Bank: Date: 2013-06-05T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Golf Bets Amount: 1.96
+2019-09-04 16:10:41.3748 Debug - Bank: Date: 2013-06-06T00:00:00 ToAccount: Jon A FromAccount: Todd Narrative: Pokemon Training Amount: 1.06
+2019-09-04 16:10:41.3748 Debug - Bank: Date: 2013-06-10T00:00:00 ToAccount: Gergana I FromAccount: Sarah T Narrative: Lego Assistance Amount: 10.81
+2019-09-04 16:10:41.3908 Debug - Bank: Date: 2013-06-12T00:00:00 ToAccount: Ben B FromAccount: Jon A Narrative: Sandcastle Help Amount: 6.75
+2019-09-04 16:10:41.3908 Debug - Bank: Date: 2013-06-13T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Poker Winnings Amount: 5.15
+2019-09-04 16:10:41.3908 Debug - Bank: Date: 2013-06-16T00:00:00 ToAccount: Dan W FromAccount: Ben B Narrative: Misc Morale Amount: 9.24
+2019-09-04 16:10:41.4067 Debug - Bank: Date: 2013-06-19T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Coffee Amount: 3.68
+2019-09-04 16:10:41.4067 Debug - Bank: Date: 2013-06-21T00:00:00 ToAccount: Todd FromAccount: Dan W Narrative: Lunch Amount: 5.43
+2019-09-04 16:10:41.4067 Debug - Bank: Date: 2013-06-22T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Stationary Items Amount: 0.98
+2019-09-04 16:10:41.4217 Debug - Bank: Date: 2013-06-23T00:00:00 ToAccount: Jon A FromAccount: Stephen S Narrative: Audit and Other Financial Services Amount: 6.12
+2019-09-04 16:10:41.4217 Debug - Bank: Date: 2013-06-26T00:00:00 ToAccount: Sarah T FromAccount: Rob S Narrative: Lunch Amount: 8.39
+2019-09-04 16:10:41.4217 Debug - Bank: Date: 2013-06-27T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Beers Amount: 10.41
+2019-09-04 16:10:41.4376 Debug - Bank: Date: 2013-06-30T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lunch Amount: 6.51
+2019-09-04 16:10:41.4376 Debug - Bank: Date: 2013-07-01T00:00:00 ToAccount: Jon A FromAccount: Tim L Narrative: Misc Morale Amount: 1.48
+2019-09-04 16:10:41.4376 Debug - Bank: Date: 2013-07-04T00:00:00 ToAccount: Chris W FromAccount: Tim L Narrative: Poker Winnings Amount: 5.63
+2019-09-04 16:10:41.4376 Debug - Bank: Date: 2013-07-05T00:00:00 ToAccount: Sam N FromAccount: Stephen S Narrative: Lunch Amount: 6.73
+2019-09-04 16:10:41.4516 Debug - Bank: Date: 2013-07-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Lunch Amount: 6.69
+2019-09-04 16:10:41.4516 Debug - Bank: Date: 2013-07-10T00:00:00 ToAccount: Sarah T FromAccount: Dan W Narrative: Lunch Amount: 3.88
+2019-09-04 16:10:41.4516 Debug - Bank: Date: 2013-07-13T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Misc Morale Amount: 2.08
+2019-09-04 16:10:41.4516 Debug - Bank: Date: 2013-07-16T00:00:00 ToAccount: Gergana I FromAccount: Stephen S Narrative: Coffee Amount: 6.95
+2019-09-04 16:10:41.4516 Debug - Bank: Date: 2013-07-19T00:00:00 ToAccount: Stephen S FromAccount: Dan W Narrative: Arcade Social Amount: 3.21
+2019-09-04 16:10:41.4696 Debug - Bank: Date: 2013-07-23T00:00:00 ToAccount: Stephen S FromAccount: Sarah T Narrative: Services Rendered Amount: 11.17
+2019-09-04 16:10:41.4696 Debug - Bank: Date: 2013-07-27T00:00:00 ToAccount: Tim L FromAccount: Ben B Narrative: Coffee Amount: 4.29
+2019-09-04 16:10:41.4696 Debug - Bank: Date: 2013-07-30T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Beers Amount: 0.69
+2019-09-04 16:10:41.4696 Debug - Bank: Date: 2013-07-31T00:00:00 ToAccount: Sam N FromAccount: Dan W Narrative: Pokemon Training Amount: 1.2
+2019-09-04 16:10:41.4835 Debug - Bank: Date: 2013-08-01T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Lunch Amount: 11.18
+2019-09-04 16:10:41.4835 Debug - Bank: Date: 2013-08-05T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Jenkins Fees Amount: 11.34
+2019-09-04 16:10:41.4835 Debug - Bank: Date: 2013-08-07T00:00:00 ToAccount: Rob S FromAccount: Jon A Narrative: Poker Winnings Amount: 10.78
+2019-09-04 16:10:41.4835 Debug - Bank: Date: 2013-08-08T00:00:00 ToAccount: Stephen S FromAccount: Gergana I Narrative: Lunch Amount: 10.07
+2019-09-04 16:10:41.4995 Debug - Bank: Date: 2013-08-11T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Lunch Amount: 7.27
+2019-09-04 16:10:41.4995 Debug - Bank: Date: 2013-08-13T00:00:00 ToAccount: Chris W FromAccount: Gergana I Narrative: Sandcastle Help Amount: 9.96
+2019-09-04 16:10:41.4995 Debug - Bank: Date: 2013-08-16T00:00:00 ToAccount: Ben B FromAccount: Gergana I Narrative: Misc Morale Amount: 10.91
+2019-09-04 16:10:41.4995 Debug - Bank: Date: 2013-08-19T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Coffee Amount: 7.51
+2019-09-04 16:10:41.5154 Debug - Bank: Date: 2013-08-22T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Misc Morale Amount: 7.05
+2019-09-04 16:10:41.5154 Debug - Bank: Date: 2013-08-23T00:00:00 ToAccount: Sam N FromAccount: Todd Narrative: Beers Amount: 0.6
+2019-09-04 16:10:41.5154 Debug - Bank: Date: 2013-08-26T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 3.85
+2019-09-04 16:10:41.5154 Debug - Bank: Date: 2013-08-27T00:00:00 ToAccount: Gergana I FromAccount: Sam N Narrative: Fantasy Football Amount: 5.45
+2019-09-04 16:10:41.5154 Debug - Bank: Date: 2013-08-28T00:00:00 ToAccount: Chris W FromAccount: Rob S Narrative: Jenkins Fees Amount: 11.13
+2019-09-04 16:10:41.5314 Debug - Bank: Date: 2013-08-31T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Pokemon Training Amount: 5.54
+2019-09-04 16:10:41.5314 Debug - Bank: Date: 2013-09-03T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 9.48
+2019-09-04 16:10:41.5314 Debug - Bank: Date: 2013-09-05T00:00:00 ToAccount: Tim L FromAccount: Dan W Narrative: Lunch Amount: 10.58
+2019-09-04 16:10:41.5314 Debug - Bank: Date: 2013-09-07T00:00:00 ToAccount: Laura B FromAccount: Rob S Narrative: Lunch Amount: 3.32
+2019-09-04 16:10:41.5314 Debug - Bank: Date: 2013-09-10T00:00:00 ToAccount: Ben B FromAccount: Tim L Narrative: Misc Morale Amount: 8.68
+2019-09-04 16:10:41.5493 Debug - Bank: Date: 2013-09-12T00:00:00 ToAccount: Laura B FromAccount: Tim L Narrative: Lego Assistance Amount: 2.53
+2019-09-04 16:10:41.5493 Debug - Bank: Date: 2013-09-13T00:00:00 ToAccount: Laura B FromAccount: Stephen S Narrative: Services Rendered Amount: 1.96
+2019-09-04 16:10:41.5493 Debug - Bank: Date: 2013-09-16T00:00:00 ToAccount: Rob S FromAccount: Sam N Narrative: Beers Amount: 2.81
+2019-09-04 16:10:41.5613 Debug - Bank: Date: 2013-09-19T00:00:00 ToAccount: Gergana I FromAccount: Ben B Narrative: Beers Amount: 5.52
+2019-09-04 16:10:41.5613 Debug - Bank: Date: 2013-09-22T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Sandbox Help Amount: 9.28
+2019-09-04 16:10:41.5613 Debug - Bank: Date: 2013-09-23T00:00:00 ToAccount: Dan W FromAccount: Stephen S Narrative: Coffee Amount: 5.13
+2019-09-04 16:10:41.5613 Debug - Bank: Date: 2013-09-27T00:00:00 ToAccount: Sarah T FromAccount: Chris W Narrative: Stationary Items Amount: 7.05
+2019-09-04 16:10:41.5613 Debug - Bank: Date: 2013-10-01T00:00:00 ToAccount: Tim L FromAccount: Todd Narrative: Coffee Amount: 10.13
+2019-09-04 16:10:41.5803 Debug - Bank: Date: 2013-10-04T00:00:00 ToAccount: Ben B FromAccount: Chris W Narrative: Coffee Amount: 5.96
+2019-09-04 16:10:41.5803 Debug - Bank: Date: 2013-10-08T00:00:00 ToAccount: Laura B FromAccount: Gergana I Narrative: Lunch Amount: 5.33
+2019-09-04 16:10:41.5803 Debug - Bank: Date: 2013-10-11T00:00:00 ToAccount: Rob S FromAccount: Todd Narrative: Lunch Amount: 10.62
+2019-09-04 16:10:41.5803 Debug - Bank: Date: 2013-10-12T00:00:00 ToAccount: Chris W FromAccount: Ben B Narrative: Jenkins Fees Amount: 7.78
+2019-09-04 16:10:41.5952 Debug - Bank: Date: 2013-10-16T00:00:00 ToAccount: Rob S FromAccount: Laura B Narrative: Arcade Social Amount: 5.71
+2019-09-04 16:10:41.5952 Debug - Bank: Date: 2013-10-17T00:00:00 ToAccount: Jon A FromAccount: Laura B Narrative: Arcade Social Amount: 7.71
+2019-09-04 16:10:41.5952 Debug - Bank: Date: 2013-10-20T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 10.6
+2019-09-04 16:10:41.5952 Debug - Bank: Date: 2013-10-23T00:00:00 ToAccount: Todd FromAccount: Chris W Narrative: Lego Assistance Amount: 3.42
+2019-09-04 16:10:41.6102 Debug - Bank: Date: 2013-10-27T00:00:00 ToAccount: Dan W FromAccount: Sam N Narrative: Misc Morale Amount: 6.89
+2019-09-04 16:10:41.6102 Debug - Bank: Date: 2013-10-29T00:00:00 ToAccount: Rob S FromAccount: Dan W Narrative: Misc Morale Amount: 9.99
+2019-09-04 16:10:41.6102 Debug - Bank: Date: 2013-11-01T00:00:00 ToAccount: Laura B FromAccount: Sarah T Narrative: Lunch Amount: 7.01
+2019-09-04 16:10:41.6102 Debug - Bank: Date: 2013-11-05T00:00:00 ToAccount: Rob S FromAccount: Stephen S Narrative: Spline Reticulation Amount: 8.3
+2019-09-04 16:10:41.6251 Debug - Bank: Date: 2013-11-07T00:00:00 ToAccount: Sarah T FromAccount: Ben B Narrative: Lunch Amount: 10.09
+2019-09-04 16:10:41.6251 Debug - Bank: Date: 2013-11-09T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Stationary Items Amount: 11
+2019-09-04 16:10:41.6251 Debug - Bank: Date: 2013-11-12T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 1.25
+2019-09-04 16:10:41.6251 Debug - Bank: Date: 2013-11-15T00:00:00 ToAccount: Tim L FromAccount: Jon A Narrative: Sandbox Help Amount: 9.13
+2019-09-04 16:10:41.6406 Debug - Bank: Date: 2013-11-18T00:00:00 ToAccount: Dan W FromAccount: Rob S Narrative: Services Rendered Amount: 9.4
+2019-09-04 16:10:41.6406 Debug - Bank: Date: 2013-11-21T00:00:00 ToAccount: Chris W FromAccount: Stephen S Narrative: Misc Morale Amount: 2.53
+2019-09-04 16:10:41.6406 Debug - Bank: Date: 2013-11-24T00:00:00 ToAccount: Sam N FromAccount: Tim L Narrative: Rails Consultancy Amount: 7.59
+2019-09-04 16:10:41.6406 Debug - Bank: Date: 2013-11-28T00:00:00 ToAccount: Todd FromAccount: Ben B Narrative: Golf Bets Amount: 2.15
+2019-09-04 16:10:41.6552 Debug - Bank: Date: 2013-11-29T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Pokemon Training Amount: 4.01
+2019-09-04 16:10:41.6552 Debug - Bank: Date: 2013-12-01T00:00:00 ToAccount: Sarah T FromAccount: Sam N Narrative: Lunch Amount: 6.35
+2019-09-04 16:10:41.6552 Debug - Bank: Date: 2013-12-02T00:00:00 ToAccount: Todd FromAccount: Jon A Narrative: Misc Morale Amount: 10.19
+2019-09-04 16:10:41.6552 Debug - Bank: Date: 2013-12-05T00:00:00 ToAccount: Sam N FromAccount: Ben B Narrative: Coffee Amount: 9
+2019-09-04 16:10:41.6712 Debug - Bank: Date: 2013-12-09T00:00:00 ToAccount: Tim L FromAccount: Laura B Narrative: Rails Consultancy Amount: 9.39
+2019-09-04 16:10:41.6712 Debug - Bank: Date: 2013-12-12T00:00:00 ToAccount: Tim L FromAccount: Chris W Narrative: Coffee Amount: 11.44
+2019-09-04 16:10:41.6712 Debug - Bank: Date: 2013-12-13T00:00:00 ToAccount: Tim L FromAccount: Rob S Narrative: Misc Morale Amount: 9.19
+2019-09-04 16:10:41.6712 Debug - Bank: Date: 2013-12-17T00:00:00 ToAccount: Ben B FromAccount: Sarah T Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:10:41.6712 Debug - Bank: Date: 2013-12-19T00:00:00 ToAccount: Ben B FromAccount: Todd Narrative: Pokemon Training Amount: 8.72
+2019-09-04 16:10:41.6881 Debug - Bank: Date: 2013-12-22T00:00:00 ToAccount: Sam N FromAccount: Gergana I Narrative: Lunch Amount: 1.32
+2019-09-04 16:10:41.6881 Debug - Bank: Date: 2013-12-24T00:00:00 ToAccount: Rob S FromAccount: Ben B Narrative: Snooker Night Amount: 10.14
+2019-09-04 16:10:41.6881 Debug - Bank: Date: 2013-12-27T00:00:00 ToAccount: Todd FromAccount: Stephen S Narrative: Spline Reticulation Amount: 4.34
+2019-09-04 16:10:41.7021 Debug - Bank: Date: 2013-12-28T00:00:00 ToAccount: Chris W FromAccount: Jon A Narrative: Beers Amount: 5.99
+2019-09-04 16:10:41.7021 Debug - Bank: Date: 2013-12-30T00:00:00 ToAccount: Sam N FromAccount: Rob S Narrative: Misc Morale Amount: 2.54
+2019-09-04 16:12:09.7930 Debug - SupportBank.Program: 145
+2019-09-04 16:12:18.7626 Debug - SupportBank.Program: 145
+2019-09-04 16:13:48.9316 Debug - SupportBank.Program: 145
+2019-09-04 16:14:32.4164 Debug - SupportBank.Program: 145
+2019-09-04 16:15:14.7215 Debug - SupportBank.Program: 145
+2019-09-04 16:15:40.4169 Debug - SupportBank.Program: 145

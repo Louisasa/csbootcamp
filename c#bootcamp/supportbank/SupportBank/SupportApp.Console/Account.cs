@@ -16,7 +16,7 @@ public class Account
         this.Name = name;
     }
 
-    public void changeBalance(decimal amountToChangeBy)
+    public void ChangeBalance(decimal amountToChangeBy)
     {
         this.Balance += amountToChangeBy;
     }

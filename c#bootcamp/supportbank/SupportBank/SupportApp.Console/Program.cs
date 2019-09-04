@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
@@ -20,21 +22,33 @@ namespace SupportBank
             config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
             LogManager.Configuration = config;
 
-            List<Transaction> transactionsList = BankFileReader.GetTransactions("Transactions2015.csv");
-            var bank = new Bank();
+            Console.WriteLine("Please input name of file.");
+            var fileName = Console.ReadLine();
 
-            bank.AddAccounts(transactionsList);
+            var transactionsList = BankFileReader.GetTransactions(fileName);
 
-            Console.WriteLine("Please input all or user name for account info.");
-            string input = Console.ReadLine();
-            
-            if (input.ToLower() == "all")
+            if (transactionsList != null)
             {
-                OutputAllAccounts(bank);
+                var bank = new Bank();
+
+                bank.AddToBank(transactionsList);
+
+
+                Console.WriteLine("Please input all or user name for account info.");
+                var input = Console.ReadLine();
+
+                if (input.ToLower() == "all")
+                {
+                    OutputAllAccounts(bank);
+                }
+                else
+                {
+                    OutputOnePersonsTransactions(bank, input.ToLower());
+                }
             }
             else
             {
-                OutputOnePersonsTransactions(bank, input.ToLower());
+                Console.WriteLine("Please input a valid filename");
             }
 
             Console.ReadLine();
@@ -42,24 +56,24 @@ namespace SupportBank
 
         private static void OutputAllAccounts(Bank bank)
         {
-            Dictionary<string, decimal> accountsInfo = bank.OutputAllAccounts();
+            var accountsInfo = bank.OutputAllAccounts();
             PrintAccountsInfo(accountsInfo);
         }
 
-        private static void OutputOnePersonsTransactions(Bank bank, String personName)
+        private static void OutputOnePersonsTransactions(Bank bank, string personName)
         {
-            List<Transaction> resultTransactions = bank.GetPersonsTransactions(personName);
+            var resultTransactions = bank.GetPersonsTransactions(personName);
 
             Console.WriteLine(personName+":");
-            foreach (Transaction transaction in resultTransactions)
+            foreach (var transaction in resultTransactions)
             {
-                Console.WriteLine(transaction.ToString());
+                Console.WriteLine("Date: " + transaction.Date + " ToAccount: " + transaction.ToAccount + " FromAccount: " + transaction.FromAccount + " Narrative: " + transaction.Narrative + " Amount: " + transaction.Amount);
             }
         }
 
         private static void PrintAccountsInfo(Dictionary<string, decimal> accountsInfo)
         {
-            foreach (KeyValuePair<string, decimal> entry in accountsInfo)
+            foreach (var entry in accountsInfo)
             {
                 Console.WriteLine(entry.Key + " is owed " + entry.Value);
             }

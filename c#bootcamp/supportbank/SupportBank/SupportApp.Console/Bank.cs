@@ -1,48 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NLog;
 
 public class Bank
 {
 
-    private List<Account> allAccounts = new List<Account>();
-    private List<Transaction> allTransactions = new List<Transaction>();
-
-    public void AddAccounts(List<Transaction> transactionList)
+    private readonly List<Account> _allAccounts = new List<Account>();
+    private readonly List<Transaction> _allTransactions = new List<Transaction>();
+    private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
+    
+    public void AddToBank(List<Transaction> transactionList)
     {
         List<string> accountNamesList = new List<string>();
         foreach (Transaction transaction in transactionList)
         {
-            if (!accountNamesList.Contains(transaction.To))
+            if (!accountNamesList.Contains(transaction.ToAccount))
             {
-                Account account = new Account(transaction.To, transaction.Amount);
+                Account account = new Account(transaction.ToAccount, transaction.Amount);
                 accountNamesList.Add(account.Name);
-                allAccounts.Add(account);
+                _allAccounts.Add(account);
             }
             else
             {
-                allAccounts[accountNamesList.IndexOf(transaction.To)].changeBalance(transaction.Amount);
+                _allAccounts[accountNamesList.IndexOf(transaction.ToAccount)].ChangeBalance(transaction.Amount);
             }
 
-            if (!accountNamesList.Contains(transaction.From))
+            if (!accountNamesList.Contains(transaction.FromAccount))
             {
-                Account account = new Account(transaction.From, transaction.Amount);
+                Account account = new Account(transaction.FromAccount, transaction.Amount);
                 accountNamesList.Add(account.Name);
-                allAccounts.Add(account);
+                _allAccounts.Add(account);
             }
             else
             {
-                allAccounts[accountNamesList.IndexOf(transaction.From)].changeBalance(transaction.Amount);
+                _allAccounts[accountNamesList.IndexOf(transaction.FromAccount)].ChangeBalance(-transaction.Amount);
             }
         }
 
-        allTransactions.AddRange(transactionList);
+        _allTransactions.AddRange(transactionList);
     }
 
     public Dictionary<string, decimal> OutputAllAccounts()
     {
         Dictionary<string, decimal> accountsInfo = new Dictionary<string, decimal>();
-        foreach (Account account in allAccounts)
+        foreach (Account account in _allAccounts)
         {
             accountsInfo[account.Name] = account.Balance;
         }
@@ -52,6 +54,6 @@ public class Bank
 
     public List<Transaction> GetPersonsTransactions(string personName)
     {
-        return allTransactions.Where(transaction => transaction.From == personName || transaction.To == personName).ToList();
+        return _allTransactions.Where(transaction => transaction.FromAccount.ToLower() == personName || transaction.ToAccount.ToLower() == personName).ToList();
     }
 }

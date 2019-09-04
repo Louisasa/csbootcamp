@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Newtonsoft.Json;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
@@ -11,11 +12,22 @@ public class BankFileReader
     private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
     public static List<Transaction> GetTransactions(string fileName)
     {
-        StreamReader reader = new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
+        if (fileName.Contains(".csv"))
+        {
+            var reader = new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
 
-        Dictionary<string, int> headers = GetHeaders(reader);
+            var headers = GetHeaders(reader);
 
-        return CreateTransactions(reader, headers);
+            return CreateTransactions(reader, headers);
+        }
+        else if (fileName.Contains(".json"))
+        {
+            return JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
+        }
+        else
+        {
+            return null;
+        }
     }
 
     private static Dictionary<string, int> GetHeaders(StreamReader reader)
@@ -30,17 +42,15 @@ public class BankFileReader
         var transactionList = new List<Transaction>();
         while (!reader.EndOfStream)
         {
-            string line = reader.ReadLine();
-            string[] values = line.Split(',');
+            var line = reader.ReadLine();
+            var values = line.Split(',');
 
-            string date = values[headers["Date"]].ToLower();
-            string to = values[headers["To"]].ToLower();
-            string from = values[headers["From"]].ToLower();
-            decimal amount = decimal.Parse(values[headers["Amount"]]);
-            string narrative = values[headers["Narrative"]].ToLower();
+            var date = values[headers["Date"]].ToLower();
+            var to = values[headers["To"]].ToLower();
+            var from = values[headers["From"]].ToLower();
+            var narrative = values[headers["Narrative"]].ToLower();
 
-            //decimal amount;
-            bool successfullyParsed = decimal.TryParse(values[headers["Amount"]], out amount);
+            var successfullyParsed = decimal.TryParse(values[headers["Amount"]], out var amount);
 
             if (successfullyParsed)
             {
