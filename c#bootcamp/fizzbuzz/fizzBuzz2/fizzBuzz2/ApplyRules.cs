@@ -77,19 +77,14 @@ public class ApplyRules
     {
         if (index % 13 == 0)
         {
-            if (resultList.Contains("Buzz"))
+            foreach (string result in resultList)
             {
-                resultList.Insert(resultList.IndexOf("Buzz"), "Fezz");
+                if (result[0].Equals("B"))
+                {
+                    resultList.Insert(resultList.IndexOf(result), "Fezz");
+                }
             }
-            else if (resultList.Contains("Bang"))
-            {
-                resultList.Insert(resultList.IndexOf("Bang"), "Fezz");
-            }
-            else if (resultList.Contains("Bong"))
-            {
-                resultList.Insert(resultList.IndexOf("Bong"), "Fezz");
-            }
-            else
+            if (!resultList.Contains("Fezz"))
             {
                 resultList.Add("Fezz");
             }
