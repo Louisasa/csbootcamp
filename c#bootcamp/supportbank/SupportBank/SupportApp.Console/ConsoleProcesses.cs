@@ -40,7 +40,7 @@ public class ConsoleProcess
         Console.WriteLine(personName + ":");
         foreach (var transaction in resultTransactions)
         {
-            Console.WriteLine("Date: " + transaction.Date + " ToAccount: " + transaction.ToAccount + " FromAccount: " + transaction.FromAccount + " Narrative: " + transaction.Narrative + " Amount: " + transaction.Amount);
+            Console.WriteLine("Date: " + transaction.Date + " ToName: " + transaction.ToName + " FromName: " + transaction.FromName + " Narrative: " + transaction.Narrative + " Amount: " + transaction.Amount);
         }
     }
 

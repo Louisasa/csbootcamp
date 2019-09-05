@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-public class CsvConvert
+public class CsvConverter
 {
-    public List<Transaction> csvToTransactionList(StreamReader reader)
+    public List<Transaction> CsvToTransactionList(StreamReader reader)
     {
         var headers = GetHeaders(reader);
 

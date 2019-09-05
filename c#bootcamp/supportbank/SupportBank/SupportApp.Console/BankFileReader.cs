@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using SupportApp.Console.Transaction_Files;
 
 public class BankFileReader
 {
@@ -14,13 +17,29 @@ public class BankFileReader
     {
         if (fileName.EndsWith(".csv"))
         {
-            CsvConvert csvConverter = new CsvConvert();
-            return csvConverter.CsvToTransactionList(new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName)));
+            CsvConverter csvConverter = new CsvConverter();
+            return csvConverter.CsvToTransactionList(new StreamReader(File.OpenRead(
+                "C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/Transaction Files/" + 
+                fileName)));
 
         }
         else if (fileName.EndsWith(".json"))
         {
-            return JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
+            List<JsonTransaction> jsonTransactions = JsonConvert.DeserializeObject<List<JsonTransaction>>(File.ReadAllText(
+                "C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/Transaction Files/" + 
+                fileName));
+            return jsonTransactions.Select(transaction => transaction.ToTransaction()).ToList();
+        }
+        else if (fileName.EndsWith(".xml"))
+        {
+            StreamReader reader = new StreamReader(File.OpenRead(
+                "C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/Transaction Files/" +
+                fileName));
+            XmlSerializer serializer = new XmlSerializer(typeof(XmlTransactionList));
+            XmlTransactionList xmlTransactions = (XmlTransactionList)serializer.Deserialize(reader);
+            var result = xmlTransactions.ToTransaction();
+
+            return result;
         }
         else
         {

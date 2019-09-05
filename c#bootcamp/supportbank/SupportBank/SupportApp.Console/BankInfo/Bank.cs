@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NLog;
+using SupportApp.Console.BankInfo;
 
 public class Bank
 {
@@ -15,26 +16,26 @@ public class Bank
     {
         foreach (Transaction transaction in transactionList)
         {
-            if (!accountNamesList.Contains(transaction.ToAccount.ToLower()))
+            if (!accountNamesList.Contains(transaction.ToName.ToLower()))
             {
-                Account account = new Account(transaction.ToAccount.ToLower(), transaction.Amount);
+                Account account = new Account(transaction.ToName.ToLower(), transaction.Amount);
                 accountNamesList.Add(account.Name);
                 _allAccounts.Add(account);
             }
             else
             {
-                _allAccounts[accountNamesList.IndexOf(transaction.ToAccount.ToLower())].ChangeBalance(transaction.Amount);
+                _allAccounts[accountNamesList.IndexOf(transaction.ToName.ToLower())].ChangeBalance(transaction.Amount);
             }
 
-            if (!accountNamesList.Contains(transaction.FromAccount.ToLower()))
+            if (!accountNamesList.Contains(transaction.FromName.ToLower()))
             {
-                Account account = new Account(transaction.FromAccount.ToLower(), transaction.Amount);
+                Account account = new Account(transaction.FromName.ToLower(), transaction.Amount);
                 accountNamesList.Add(account.Name);
                 _allAccounts.Add(account);
             }
             else
             {
-                _allAccounts[accountNamesList.IndexOf(transaction.FromAccount.ToLower())].ChangeBalance(-transaction.Amount);
+                _allAccounts[accountNamesList.IndexOf(transaction.FromName.ToLower())].ChangeBalance(-transaction.Amount);
             }
         }
 
@@ -48,6 +49,6 @@ public class Bank
 
     public List<Transaction> GetPersonsTransactions(string personName)
     {
-        return _allTransactions.Where(transaction => transaction.FromAccount.ToLower() == personName || transaction.ToAccount.ToLower() == personName).ToList();
+        return _allTransactions.Where(transaction => transaction.FromName.ToLower() == personName || transaction.ToName.ToLower() == personName).ToList();
     }
 }
