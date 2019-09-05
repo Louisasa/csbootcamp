@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.ServiceModel.Channels;
 using Newtonsoft.Json;
 using NLog;
 using NLog.Config;
@@ -16,66 +18,74 @@ namespace SupportBank
 
         public static void Main(string[] args)
         {
-            var config = new LoggingConfiguration();
-            var target = new FileTarget { FileName = @"SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
-            config.AddTarget("File Logger", target);
-            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
-            LogManager.Configuration = config;
+            CreateLoggerConfig();
 
-            Console.WriteLine("Please input name of file.");
-            var fileName = Console.ReadLine();
+            var bank = new Bank();
+            var bankFileReader = new BankFileReader();
+            var consoleProcess = new ConsoleProcess();
 
-            var transactionsList = BankFileReader.GetTransactions(fileName);
+            ReadInNewFile(bank, bankFileReader, consoleProcess);
 
-            if (transactionsList != null)
+            while (true)
             {
-                var bank = new Bank();
+                var userOption = consoleProcess.GetUserOption();
 
-                bank.AddToBank(transactionsList);
-
-
-                Console.WriteLine("Please input all or user name for account info.");
-                var input = Console.ReadLine();
-
-                if (input.ToLower() == "all")
+                if (userOption == 1)
                 {
-                    OutputAllAccounts(bank);
+                    ReadInNewFile(bank, bankFileReader, consoleProcess);
+                }
+                else if (userOption == 2)
+                {
+                    var input = consoleProcess.GetUser();
+                    ProcessUserRequest(input, bank, consoleProcess);
                 }
                 else
                 {
-                    OutputOnePersonsTransactions(bank, input.ToLower());
+                    break;
                 }
-            }
-            else
-            {
-                Console.WriteLine("Please input a valid filename");
             }
 
             Console.ReadLine();
         }
 
-        private static void OutputAllAccounts(Bank bank)
+        private static void CreateLoggerConfig()
         {
-            var accountsInfo = bank.OutputAllAccounts();
-            PrintAccountsInfo(accountsInfo);
+            var config = new LoggingConfiguration();
+            var target = new FileTarget { FileName = @"SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
+            config.AddTarget("File Logger", target);
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
+            LogManager.Configuration = config;
         }
 
-        private static void OutputOnePersonsTransactions(Bank bank, string personName)
+        private static void ReadInNewFile(Bank bank, BankFileReader bankFileReader, ConsoleProcess consoleProcess)
         {
-            var resultTransactions = bank.GetPersonsTransactions(personName);
+            var fileName = consoleProcess.GetFileName();
+            var transactionsList = bankFileReader.GetTransactions(fileName);
+            AddNonNullTransactionsToBank(bank, transactionsList);
+        }
 
-            Console.WriteLine(personName+":");
-            foreach (var transaction in resultTransactions)
+        private static void ProcessUserRequest(string input, Bank bank, ConsoleProcess consoleProcess)
+        {
+            if (input.ToLower() == "all")
             {
-                Console.WriteLine("Date: " + transaction.Date + " ToAccount: " + transaction.ToAccount + " FromAccount: " + transaction.FromAccount + " Narrative: " + transaction.Narrative + " Amount: " + transaction.Amount);
+                var accountsInfo = bank.GetAllAccounts();
+                consoleProcess.OutputAllAccounts(accountsInfo);
+            }
+            else
+            {
+                consoleProcess.OutputOnePersonsTransactions(bank, input.ToLower());
             }
         }
 
-        private static void PrintAccountsInfo(Dictionary<string, decimal> accountsInfo)
+        private static void AddNonNullTransactionsToBank(Bank bank, List<Transaction> transactionsList)
         {
-            foreach (var entry in accountsInfo)
+            if (transactionsList != null)
             {
-                Console.WriteLine(entry.Key + " is owed " + entry.Value);
+                bank.AddToBank(transactionsList);
+            }
+            else
+            {
+                Console.WriteLine("Please input a valid filename");
             }
         }
     }

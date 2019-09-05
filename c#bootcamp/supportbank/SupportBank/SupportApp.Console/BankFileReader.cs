@@ -10,17 +10,24 @@ using NLog.Targets;
 public class BankFileReader
 {
     private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
-    public static List<Transaction> GetTransactions(string fileName)
+    public List<Transaction> GetTransactions(string fileName)
     {
-        if (fileName.Contains(".csv"))
+        if (fileName.EndsWith(".csv"))
         {
             var reader = new StreamReader(File.OpenRead("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
 
             var headers = GetHeaders(reader);
 
-            return CreateTransactions(reader, headers);
+            if (headers.Count>0)
+            {
+                return CreateTransactions(reader, headers);
+            }
+            else
+            {
+                return new List<Transaction>();
+            }
         }
-        else if (fileName.Contains(".json"))
+        else if (fileName.EndsWith(".json"))
         {
             return JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/" + fileName));
         }
@@ -33,7 +40,7 @@ public class BankFileReader
     private static Dictionary<string, int> GetHeaders(StreamReader reader)
     {
         var line = reader.ReadLine();
-        var values = line.Split(',');
+        var values = line?.Split(',');
         return Enumerable.Range(0, values.Length).ToDictionary(i => values[i], i => i);
     }
 
