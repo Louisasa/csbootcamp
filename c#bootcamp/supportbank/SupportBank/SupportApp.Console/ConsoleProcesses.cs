@@ -19,7 +19,8 @@ public class ConsoleProcess
     {
         Console.WriteLine("To add another file, type 1.");
         Console.WriteLine("To request user information, type 2.");
-        Console.WriteLine("To close requests, type 3.");
+        Console.WriteLine("To export to file, type 3.");
+        Console.WriteLine("To close requests, type 4.");
         var input = Console.ReadLine();
         bool successfullyParsed = int.TryParse(input, out var result);
         if (!successfullyParsed)
@@ -33,10 +34,8 @@ public class ConsoleProcess
         }
     }
 
-    public void OutputOnePersonsTransactions(Bank bank, string personName)
+    public void OutputOnePersonsTransactions(List<Transaction> resultTransactions, string personName)
     {
-        var resultTransactions = bank.GetPersonsTransactions(personName);
-
         Console.WriteLine(personName + ":");
         foreach (var transaction in resultTransactions)
         {

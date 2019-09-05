@@ -22,7 +22,13 @@ namespace SupportApp.Console.Transaction_Files
 
         public Transaction ToTransaction()
         {
-            return new Transaction(Date, Parties.To, Parties.From, Narrative, decimal.Parse(Amount));
+            return new Transaction(ToDateString(), Parties.To, Parties.From, Narrative, decimal.Parse(Amount));
+        }
+
+        public string ToDateString()
+        {
+            var epoch = new DateTime(1900,1,1);
+            return epoch.AddDays(int.Parse(Date)).ToShortDateString();
         }
     }
 

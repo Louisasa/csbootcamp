@@ -28,7 +28,7 @@ public class BankFileReader
             List<JsonTransaction> jsonTransactions = JsonConvert.DeserializeObject<List<JsonTransaction>>(File.ReadAllText(
                 "C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/Transaction Files/" + 
                 fileName));
-            return jsonTransactions.Select(transaction => transaction.ToTransaction()).ToList();
+            return jsonTransactions.Select(transaction => transaction.ToTransactions()).ToList();
         }
         else if (fileName.EndsWith(".xml"))
         {
@@ -37,7 +37,7 @@ public class BankFileReader
                 fileName));
             XmlSerializer serializer = new XmlSerializer(typeof(XmlTransactionList));
             XmlTransactionList xmlTransactions = (XmlTransactionList)serializer.Deserialize(reader);
-            var result = xmlTransactions.ToTransaction();
+            var result = xmlTransactions.ToTransactions();
 
             return result;
         }

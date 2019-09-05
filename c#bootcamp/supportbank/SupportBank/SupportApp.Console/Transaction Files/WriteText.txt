@@ -1,0 +1,149 @@
+03/01/2012  Jon A  Gergana I  Snooker Night  9.22
+04/01/2012  Dan W  Sam N  Coffee  6.98
+08/01/2012  Sarah T  Stephen S  Lunch  10.67
+09/01/2012  Sarah T  Rob S  Misc Morale  7.19
+11/01/2012  Chris W  Tim L  Fantasy Football  10.73
+14/01/2012  Rob S  Tim L  Automated Testing Services  10.1
+16/01/2012  Sam N  Sarah T  Beers  1.79
+19/01/2012  Todd  Dan W  Beers  11.1
+20/01/2012  Ben B  Chris W  Coffee  10.89
+22/01/2012  Tim L  Chris W  Pokemon Training  3.12
+26/01/2012  Tim L  Rob S  Snooker Night  2.29
+27/01/2012  Rob S  Chris W  Spline Reticulation  7.32
+30/01/2012  Gergana I  Stephen S  Stationary Items  6.1
+31/01/2012  Todd  Stephen S  Lunch  7.72
+02/02/2012  Laura B  Stephen S  Misc Morale  5.2
+04/02/2012  Rob S  Sam N  Pokemon Training  4.67
+07/02/2012  Chris W  Ben B  Coffee  11.72
+11/02/2012  Jon A  Rob S  Pokemon Training  6.45
+15/02/2012  Ben B  Todd  Sandcastle Help  8.46
+18/02/2012  Todd  Laura B  Lunch  10.36
+22/02/2012  Stephen S  Chris W  Pokemon Training  3.88
+25/02/2012  Dan W  Sam N  Beers  9.81
+26/02/2012  Rob S  Gergana I  Lunch  3.67
+28/02/2012  Tim L  Dan W  Lunch  0.63
+03/03/2012  Ben B  Tim L  Jenkins Fees  2.61
+05/03/2012  Ben B  Rob S  Coffee  4.85
+09/03/2012  Gergana I  Stephen S  Lunch  3.14
+13/03/2012  Chris W  Gergana I  Arcade Social  9.01
+14/03/2012  Rob S  Gergana I  Lego Assistance  6.33
+18/03/2012  Stephen S  Dan W  Misc Morale  11.84
+20/03/2012  Sarah T  Jon A  Spline Reticulation  9.1
+23/03/2012  Dan W  Stephen S  Coffee  8.41
+27/03/2012  Tim L  Stephen S  Lunch  2.38
+31/03/2012  Laura B  Gergana I  Snooker Night  1.9
+01/04/2012  Gergana I  Sarah T  Sandcastle Help  1.89
+02/04/2012  Dan W  Laura B  Stationary Items  3.8
+04/04/2012  Chris W  Dan W  Fantasy Football  11.63
+06/04/2012  Todd  Dan W  Misc Morale  7.32
+07/04/2012  Chris W  Sam N  Audit and Other Financial Services  6.06
+10/04/2012  Chris W  Tim L  Arcade Social  11.17
+12/04/2012  Dan W  Sarah T  Lego Assistance  5.49
+14/04/2012  Jon A  Gergana I  Git-Fu Rendered  0.8
+15/04/2012  Todd  Sam N  Lunch  5.43
+16/04/2012  Dan W  Laura B  Lunch  10.46
+18/04/2012  Rob S  Laura B  Beers  11.7
+22/04/2012  Ben B  Stephen S  Pokemon Training  11.09
+25/04/2012  Dan W  Todd  Audit and Other Financial Services  8.44
+29/04/2012  Sam N  Laura B  Fantasy Football  0.93
+01/05/2012  Ben B  Laura B  Jenkins Fees  8.17
+02/05/2012  Tim L  Jon A  Automated Testing Services  4.79
+04/05/2012  Laura B  Sarah T  Snooker Night  8.24
+08/05/2012  Ben B  Gergana I  Coffee  9.17
+11/05/2012  Sam N  Todd  Pokemon Training  11.4
+12/05/2012  Dan W  Sam N  Sandbox Help  1.55
+15/05/2012  Rob S  Chris W  Lunch  4.3
+19/05/2012  Sam N  Rob S  Automated Testing Services  8.6
+23/05/2012  Chris W  Todd  Fantasy Football  10.88
+27/05/2012  Chris W  Sarah T  Misc Morale  5.19
+30/05/2012  Ben B  Tim L  White Water Rafting  10.73
+02/06/2012  Tim L  Gergana I  Arcade Social  10.73
+03/06/2012  Jon A  Chris W  Spline Reticulation  10.84
+04/06/2012  Jon A  Laura B  Coffee  3.51
+06/06/2012  Dan W  Sarah T  Automated Testing Services  1.78
+09/06/2012  Stephen S  Dan W  Lunch  3.11
+13/06/2012  Chris W  Sarah T  Lego Assistance  3.75
+16/06/2012  Stephen S  Todd  Misc Morale  4.15
+20/06/2012  Chris W  Laura B  Stationary Items  9.43
+21/06/2012  Chris W  Ben B  Golf Bets  1.45
+23/06/2012  Sam N  Laura B  Lunch  8.71
+24/06/2012  Todd  Stephen S  Lunch  4.8
+27/06/2012  Jon A  Dan W  Misc Morale  6.57
+29/06/2012  Stephen S  Chris W  Sandcastle Help  10.78
+01/07/2012  Jon A  Laura B  Poker Winnings  0.52
+03/07/2012  Tim L  Stephen S  Pokemon Training  10.86
+07/07/2012  Dan W  Jon A  Snooker Night  7.98
+08/07/2012  Ben B  Sarah T  Jenkins Fees  7.6
+09/07/2012  Rob S  Laura B  Git-Fu Rendered  7.73
+11/07/2012  Ben B  Tim L  Misc Morale  9.1
+15/07/2012  Laura B  Jon A  Golf Bets  1.2
+16/07/2012  Todd  Tim L  Pokemon Training  3.57
+18/07/2012  Chris W  Ben B  Services Rendered  1.33
+20/07/2012  Jon A  Stephen S  Coffee  8.55
+24/07/2012  Rob S  Jon A  Lego Assistance  10.01
+25/07/2012  Sam N  Jon A  Beers  5.83
+26/07/2012  Todd  Rob S  Coffee  10.52
+28/07/2012  Dan W  Todd  Jenkins Fees  11.59
+29/07/2012  Chris W  Jon A  Coffee  9.47
+01/08/2012  Sam N  Rob S  Misc Morale  4.34
+05/08/2012  Sam N  Stephen S  Lunch  10.41
+07/08/2012  Sam N  Tim L  Sandbox Help  2.12
+11/08/2012  Dan W  Laura B  Snooker Night  1.74
+12/08/2012  Laura B  Chris W  Misc Morale  1.92
+13/08/2012  Dan W  Chris W  Rails Consultancy  3.2
+14/08/2012  Todd  Chris W  Beers  5.38
+15/08/2012  Tim L  Todd  Automated Testing Services  8.57
+16/08/2012  Stephen S  Sarah T  White Water Rafting  8.85
+20/08/2012  Stephen S  Laura B  Misc Morale  11.22
+23/08/2012  Gergana I  Dan W  Coffee  0.58
+26/08/2012  Rob S  Sarah T  Audit and Other Financial Services  10.69
+28/08/2012  Dan W  Sarah T  Coffee  7.72
+29/08/2012  Sam N  Tim L  Services Rendered  9.11
+01/09/2012  Jon A  Tim L  Fantasy Football  8.65
+04/09/2012  Dan W  Sarah T  Coffee  8.36
+05/09/2012  Sam N  Todd  Snooker Night  3.57
+06/09/2012  Tim L  Dan W  Pokemon Training  10.2
+09/09/2012  Chris W  Stephen S  Jenkins Fees  7.89
+13/09/2012  Chris W  Sarah T  Lunch  4.41
+15/09/2012  Tim L  Todd  Git-Fu Rendered  10.89
+19/09/2012  Jon A  Stephen S  Lunch  0.64
+22/09/2012  Jon A  Sam N  Beers  10.25
+24/09/2012  Gergana I  Rob S  Sandcastle Help  4.73
+28/09/2012  Chris W  Todd  Golf Bets  11.83
+01/10/2012  Stephen S  Tim L  Lunch  4.42
+04/10/2012  Ben B  Jon A  Coffee  3.66
+07/10/2012  Todd  Laura B  Lunch  10.25
+11/10/2012  Chris W  Chris W  Lunch  2.48
+14/10/2012  Dan W  Laura B  Lunch  10.62
+18/10/2012  Gergana I  Jon A  Misc Morale  9.01
+19/10/2012  Laura B  Ben B  Audit and Other Financial Services  10.6
+20/10/2012  Dan W  Todd  Beers  4.34
+23/10/2012  Ben B  Todd  Sandcastle Help  10.4
+24/10/2012  Laura B  Sam N  Coffee  2.13
+27/10/2012  Sam N  Dan W  Beers  6.22
+29/10/2012  Chris W  Gergana I  Coffee  9.29
+31/10/2012  Sam N  Dan W  Coffee  11.07
+04/11/2012  Todd  Ben B  Coffee  7.83
+05/11/2012  Tim L  Sarah T  Golf Bets  5.18
+07/11/2012  Sarah T  Sam N  Beers  6.66
+11/11/2012  Sarah T  Tim L  Pokemon Training  3.74
+15/11/2012  Dan W  Tim L  Coffee  11.93
+17/11/2012  Tim L  Jon A  Lunch  2.99
+18/11/2012  Chris W  Stephen S  Automated Testing Services  5.95
+21/11/2012  Rob S  Dan W  Coffee  7.08
+24/11/2012  Ben B  Rob S  Git-Fu Rendered  6.63
+25/11/2012  Gergana I  Dan W  Lego Assistance  0.92
+28/11/2012  Todd  Rob S  Coffee  1.49
+29/11/2012  Todd  Chris W  Services Rendered  10.78
+02/12/2012  Sarah T  Chris W  Git-Fu Rendered  4.53
+03/12/2012  Sarah T  Gergana I  Misc Morale  2.92
+06/12/2012  Tim L  Jon A  Jenkins Fees  7.88
+10/12/2012  Sarah T  Tim L  Coffee  9.31
+13/12/2012  Laura B  Sam N  Rails Consultancy  2.44
+14/12/2012  Jon A  Sarah T  Stationary Items  8.89
+18/12/2012  Stephen S  Tim L  Spline Reticulation  8.73
+20/12/2012  Laura B  Sarah T  Lunch  10.28
+24/12/2012  Sarah T  Stephen S  Lego Assistance  6.07
+28/12/2012  Jon A  Tim L  Coffee  6.28
+30/12/2012  Chris W  Rob S  Automated Testing Services  10.98
+01/01/2013  Todd  Tim L  Services Rendered  0.77

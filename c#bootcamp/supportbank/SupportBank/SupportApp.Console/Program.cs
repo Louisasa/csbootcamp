@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.ServiceModel.Channels;
 using Newtonsoft.Json;
 using NLog;
@@ -36,16 +37,23 @@ namespace SupportBank
                 }
                 else if (userOption == 2)
                 {
-                    var input = consoleProcess.GetUser();
-                    ProcessUserRequest(input, bank, consoleProcess);
+                    var user = consoleProcess.GetUser();
+                    ProcessUserRequest(user, bank, consoleProcess);
+                }
+
+                if (userOption == 3)
+                {
+                    //todo get user filetype
+
+                    var text = bank._allTransactions;
+                    var result = text.Select(transaction => transaction.ToString()).ToList();
+                    System.IO.File.WriteAllLines("C:/Users/LouNas/c#bootcamp/supportbank/SupportBank/SupportApp.Console/Transaction Files/WriteText.txt", result);
                 }
                 else
                 {
                     break;
                 }
             }
-
-            Console.ReadLine();
         }
 
         private static void CreateLoggerConfig()
@@ -61,7 +69,7 @@ namespace SupportBank
         {
             var fileName = consoleProcess.GetFileName();
             var transactionsList = bankFileReader.GetTransactions(fileName);
-            AddNonNullTransactionsToBank(bank, transactionsList);
+            bank.AddToBank(transactionsList);
         }
 
         private static void ProcessUserRequest(string input, Bank bank, ConsoleProcess consoleProcess)
@@ -73,19 +81,8 @@ namespace SupportBank
             }
             else
             {
-                consoleProcess.OutputOnePersonsTransactions(bank, input.ToLower());
-            }
-        }
-
-        private static void AddNonNullTransactionsToBank(Bank bank, List<Transaction> transactionsList)
-        {
-            if (transactionsList != null)
-            {
-                bank.AddToBank(transactionsList);
-            }
-            else
-            {
-                Console.WriteLine("Please input a valid filename");
+                var resultTransactions = bank.GetPersonsTransactions(input.ToLower());
+                consoleProcess.OutputOnePersonsTransactions(resultTransactions, input.ToLower());
             }
         }
     }

@@ -23,7 +23,7 @@ namespace SupportApp.Console.Transaction_Files
             this.Amount = amount;
         }
 
-        public Transaction ToTransaction()
+        public Transaction ToTransactions()
         {
             return new Transaction(Date, ToAccount, FromAccount, Narrative, Amount);
         }

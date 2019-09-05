@@ -8,38 +8,47 @@ public class Bank
 {
 
     private readonly List<Account> _allAccounts = new List<Account>();
-    private readonly List<Transaction> _allTransactions = new List<Transaction>();
+    public readonly List<Transaction> _allTransactions = new List<Transaction>();
     List<string> accountNamesList = new List<string>();
     private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
     
     public void AddToBank(List<Transaction> transactionList)
     {
-        foreach (Transaction transaction in transactionList)
+        if (transactionList != null)
         {
-            if (!accountNamesList.Contains(transaction.ToName.ToLower()))
+            foreach (Transaction transaction in transactionList)
             {
-                Account account = new Account(transaction.ToName.ToLower(), transaction.Amount);
-                accountNamesList.Add(account.Name);
-                _allAccounts.Add(account);
-            }
-            else
-            {
-                _allAccounts[accountNamesList.IndexOf(transaction.ToName.ToLower())].ChangeBalance(transaction.Amount);
+                if (!accountNamesList.Contains(transaction.ToName.ToLower()))
+                {
+                    Account account = new Account(transaction.ToName.ToLower(), transaction.Amount);
+                    accountNamesList.Add(account.Name);
+                    _allAccounts.Add(account);
+                }
+                else
+                {
+                    _allAccounts[accountNamesList.IndexOf(transaction.ToName.ToLower())]
+                        .ChangeBalance(transaction.Amount);
+                }
+
+                if (!accountNamesList.Contains(transaction.FromName.ToLower()))
+                {
+                    Account account = new Account(transaction.FromName.ToLower(), transaction.Amount);
+                    accountNamesList.Add(account.Name);
+                    _allAccounts.Add(account);
+                }
+                else
+                {
+                    _allAccounts[accountNamesList.IndexOf(transaction.FromName.ToLower())]
+                        .ChangeBalance(-transaction.Amount);
+                }
             }
 
-            if (!accountNamesList.Contains(transaction.FromName.ToLower()))
-            {
-                Account account = new Account(transaction.FromName.ToLower(), transaction.Amount);
-                accountNamesList.Add(account.Name);
-                _allAccounts.Add(account);
-            }
-            else
-            {
-                _allAccounts[accountNamesList.IndexOf(transaction.FromName.ToLower())].ChangeBalance(-transaction.Amount);
-            }
+            _allTransactions.AddRange(transactionList);
         }
-
-        _allTransactions.AddRange(transactionList);
+        else
+        {
+            Console.WriteLine("Please input a valid filename");
+        }
     }
 
     public Dictionary<string, decimal> GetAllAccounts()

@@ -10,7 +10,7 @@ namespace SupportApp.Console.Transaction_Files
         [XmlElement("SupportTransaction", typeof(XmlTransaction))]
         public List<XmlTransaction> XmlList { get; set; }
 
-        public List<Transaction> ToTransaction()
+        public List<Transaction> ToTransactions()
         {
             return XmlList.Select(transaction => transaction.ToTransaction()).ToList();
         }
